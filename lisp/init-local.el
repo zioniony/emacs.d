@@ -9,41 +9,63 @@
 	  cal-china-x-important-holidays cal-china-x-chinese-holidays
 	  calendar-holidays cal-china-x-important-holidays)
 (require 'ess-site)
+(require 'sdcv)
 
 ;; (autoload 'sawfish-mode "sawfish" "sawfish-mode" t)
 ;; (setq auto-mode-alist (cons '("\\.sawfishrc$"  . sawfish-mode) auto-mode-alist)
 ;;       auto-mode-alist (cons '("\\.jl$"         . sawfish-mode) auto-mode-alist)
 ;;       auto-mode-alist (cons '("\\.sawfish/rc$" . sawfish-mode) auto-mode-alist))
 
-(when (fboundp 'purty-mode)
-  (purty-mode))
-
 (setq display-time-format "%Y-%m-%d %H:%M")
+
+(setq sdcv-dictionary-simple-list        ;; a simple dictionary list
+      '(
+		"新世纪英汉科技大词典"
+		"朗道英汉字典5.0"
+		"懒虫简明英汉词典"
+		"DrEye4in1词典"
+        ))
+;; (setq sdcv-dictionary-complete-list      ;; a complete dictionary list
+;;       '(
+;; 		"朗道英汉字典5.0"
+;; 		"牛津英汉双解美化版"
+;; 		"Longman Dictionary of Contemporary English (4th Ed)"
+;; 		"新世纪英汉科技大词典"
+;; 		"懒虫简明英汉词典"
+;; 		"DrEye4in1词典"
+;; 		"汉语大词典 离线版"
+;; 		"中文维基百科"
+;;         ))
+(global-set-key (kbd "C-c d") 'sdcv-search-pointer+)
+
 (display-time-mode 1)
 
 
 ;;; custom-set-variables
 (custom-set-variables
-  '(custom-enabled-themes '(tangotango))
-  '(custom-safe-themes '("5d9351cd410bff7119978f8e69e4315fd1339aa7b3af6d398c5ca6fac7fd53c7" default))
-  '(desktop-restore-frames nil)
-  '(session-use-package t nil (session))
-  ;; set time interval of echo area
-  '(suggest-key-bindings 3)
-  '(diff-command "diff")
-  '(diff-switches "-Nau1")
+ '(custom-enabled-themes '(tangotango))
+ '(custom-safe-themes '("5d9351cd410bff7119978f8e69e4315fd1339aa7b3af6d398c5ca6fac7fd53c7" default))
+ '(desktop-restore-frames nil)
+ '(session-use-package t nil (session))
+ ;; set time interval of echo area
+ '(suggest-key-bindings 3)
+ '(diff-command "diff")
+ '(diff-switches "-Nau1")
 
-  '(sql-product 'postgres)
-  '(sql-postgres-login-params
-	 '((user :default "postgres")
-	   (database :default "dbg3")
-	   (server :default "localhost")))
-  '(sql-postgres-options '("-P" "pager=off"))
-  ;; set shell used by multi-term
-  '(multi-term-program "/bin/zsh")
-  ;; ess pdflatex
-  '(ess-swv-pdflatex-commands '("xelatex"))
-  )
+ '(sql-product 'postgres)
+ '(sql-postgres-login-params
+   '((user :default "postgres")
+     (database :default "dbg3")
+     (server :default "localhost")))
+ '(sql-postgres-options '("-P" "pager=off"))
+ ;; set shell used by multi-term
+ '(multi-term-program "/bin/zsh")
+ ;; ess pdflatex
+ '(ess-swv-pdflatex-commands '("xelatex"))
+ '(ess-keep-dump-files nil)
+ ;; sdcv timeout
+ '(showtip-timeout 60)
+ )
 
 (setq-default indent-tabs-mode t)
 
@@ -114,6 +136,7 @@
   (if (not buffer-file-name)
       (write-file (concat "/sudo:root@localhost:" (ido-read-file-name "File:")))
     (write-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
 
 (provide 'init-local)
 ;;; init-local.el ends here
