@@ -40,6 +40,7 @@
 
 (display-time-mode 1)
 
+(elpy-enable)
 
 ;;; custom-set-variables
 (custom-set-variables
@@ -67,7 +68,7 @@
  '(showtip-timeout 60)
  )
 
-(setq-default indent-tabs-mode t)
+;;; (setq-default indent-tabs-mode t)
 
 (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x 5" "C-c" "C-c ;" "C-c ; f" "C-c ' f" "C-x n" "C-x"))
 (setq guide-key/idle-delay 2)
