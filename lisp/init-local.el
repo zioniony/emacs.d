@@ -11,6 +11,7 @@
 (require 'ess-site)
 (require 'sdcv)
 
+
 ;; (autoload 'sawfish-mode "sawfish" "sawfish-mode" t)
 ;; (setq auto-mode-alist (cons '("\\.sawfishrc$"  . sawfish-mode) auto-mode-alist)
 ;;       auto-mode-alist (cons '("\\.jl$"         . sawfish-mode) auto-mode-alist)
@@ -39,6 +40,10 @@
 (global-set-key (kbd "C-c d") 'sdcv-search-pointer+)
 
 (display-time-mode 1)
+
+;; (electric-spacing-mode 1)
+(add-hook 'python-mode-hook 'electric-spacing-mode)
+;; (add-hook 'org-mode-hook 'electric-spacing-mode)
 
 (elpy-enable)
 
