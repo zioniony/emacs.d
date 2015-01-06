@@ -4,11 +4,19 @@
 
 ;;; load packages
 (require 'init-setupterm)
+(require-package 'cal-china-x)
 (require 'cal-china-x)
 (setq mark-holidays-in-calendar t
 	  cal-china-x-important-holidays cal-china-x-chinese-holidays
 	  calendar-holidays cal-china-x-important-holidays)
+;;; emacs speaks statistics
+(require-package 'ess)
+(require-package 'ess-R-data-view)
+(require-package 'ess-R-object-popup)
+(require-package 'ess-smart-underscore)
 (require 'ess-site)
+
+(require-package 'showtip)
 (require 'sdcv)
 (require 'xmsi-math-symbols-input)
 
@@ -42,7 +50,7 @@
 
 (display-time-mode 1)
 
-;; Fill Column Indicator
+;; Fill Column Indicator (fci-mode)
 ;; (require 'fill-column-indicator)
 (setq fci-rule-column 80)
 ;; (setq fci-rule-width 1)
@@ -56,16 +64,23 @@
 ;; Dired reuse directory buffer
 ;; (toggle-diredp-find-file-reuse-dir 1)
 
+(require-package 'electric-spacing)
 ;; (electric-spacing-mode 1)
 (add-hook 'python-mode-hook 'electric-spacing-mode)
 ;; (add-hook 'org-mode-hook 'electric-spacing-mode)
 
+(require-package 'elpy)
+(require-package 'pyvenv)
+(require-package 'highlight-indentation)
 (elpy-enable)
 
-(autoload 'pylint "pylint")
-(add-hook 'python-mode-hook 'pylint-add-menu-items)
-(add-hook 'python-mode-hook 'pylint-add-key-bindings)
+;;(autoload 'pylint "pylint")
+;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
+;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
 
+(require-package 'adoc-mode)
+(require-package 'company)
+(require-package 'tangotango-theme)
 
 ;;; custom-set-variables
 (custom-set-variables
