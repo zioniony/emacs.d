@@ -10,6 +10,7 @@
 	  calendar-holidays cal-china-x-important-holidays)
 (require 'ess-site)
 (require 'sdcv)
+(require 'xmsi-math-symbols-input)
 
 
 ;; (autoload 'sawfish-mode "sawfish" "sawfish-mode" t)
@@ -41,11 +42,30 @@
 
 (display-time-mode 1)
 
+;; Fill Column Indicator
+;; (require 'fill-column-indicator)
+(setq fci-rule-column 80)
+;; (setq fci-rule-width 1)
+(setq fci-rule-color "darkblue")
+;; (setq fci-rule-use-dashes t)
+;; fci-dash-pattern: 0 ~ 1
+;; (setq fci-dash-pattern .40)
+;; (add-hook 'after-change-major-mode-hook 'fci-mode)
+(add-hook 'python-mode-hook 'fci-mode)
+
+;; Dired reuse directory buffer
+;; (toggle-diredp-find-file-reuse-dir 1)
+
 ;; (electric-spacing-mode 1)
 (add-hook 'python-mode-hook 'electric-spacing-mode)
 ;; (add-hook 'org-mode-hook 'electric-spacing-mode)
 
 (elpy-enable)
+
+(autoload 'pylint "pylint")
+(add-hook 'python-mode-hook 'pylint-add-menu-items)
+(add-hook 'python-mode-hook 'pylint-add-key-bindings)
+
 
 ;;; custom-set-variables
 (custom-set-variables
