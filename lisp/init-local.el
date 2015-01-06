@@ -16,8 +16,10 @@
 (require-package 'ess-smart-underscore)
 (require 'ess-site)
 
+;; sdcv is dependent on showtip
 (require-package 'showtip)
 (require 'sdcv)
+
 (require 'xmsi-math-symbols-input)
 
 
