@@ -9,6 +9,11 @@
 (setq mark-holidays-in-calendar t
 	  cal-china-x-important-holidays cal-china-x-chinese-holidays
 	  calendar-holidays cal-china-x-important-holidays)
+
+;;; AUCTEX
+(require-package 'auctex)
+(require-package 'auto-complete-auctex)
+
 ;;; emacs speaks statistics
 (require-package 'ess)
 (require-package 'ess-R-data-view)
