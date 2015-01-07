@@ -1,9 +1,11 @@
 ;;; localcodes --- local codes
 ;;; Commentary:
 ;;; Code:
-;; set path
+;; set path:
+;; `pip install --user <pkg>` install programs into '~/.local/bin',
+;; which is not perceived by emacs.
 (setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
-(setq exec-path (append exec-path '("~/.local/bin")))
+(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
 ;;; load packages
 (require 'init-setupterm)
