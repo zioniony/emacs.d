@@ -1,14 +1,17 @@
 ;;; localcodes --- local codes
 ;;; Commentary:
 ;;; Code:
+;; set path
+(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
+(setq exec-path (append exec-path '("~/.local/bin")))
 
 ;;; load packages
 (require 'init-setupterm)
 (require-package 'cal-china-x)
 (require 'cal-china-x)
 (setq mark-holidays-in-calendar t
-	  cal-china-x-important-holidays cal-china-x-chinese-holidays
-	  calendar-holidays cal-china-x-important-holidays)
+      cal-china-x-important-holidays cal-china-x-chinese-holidays
+      calendar-holidays cal-china-x-important-holidays)
 
 ;;; AUCTEX
 (require-package 'auctex)
@@ -37,10 +40,10 @@
 
 (setq sdcv-dictionary-simple-list        ;; a simple dictionary list
       '(
-		"新世纪英汉科技大词典"
-		"朗道英汉字典5.0"
-		"懒虫简明英汉词典"
-		"DrEye4in1词典"
+        "新世纪英汉科技大词典"
+        "朗道英汉字典5.0"
+        "懒虫简明英汉词典"
+        "DrEye4in1词典"
         ))
 ;; (setq sdcv-dictionary-complete-list      ;; a complete dictionary list
 ;;       '(
@@ -91,8 +94,10 @@
 
 ;;; custom-set-variables
 (custom-set-variables
- '(custom-enabled-themes '(tangotango))
- '(custom-safe-themes '("5d9351cd410bff7119978f8e69e4315fd1339aa7b3af6d398c5ca6fac7fd53c7" default))
+ '(custom-enabled-themes (quote (tangotango)))
+ '(custom-safe-themes
+   (quote
+    ("a31c86c0a9ba5d06480b02bb912ae58753e09f13edeb07af8927d67c3bb94d68" "5d9351cd410bff7119978f8e69e4315fd1339aa7b3af6d398c5ca6fac7fd53c7" default)))
  '(desktop-restore-frames nil)
  '(session-use-package t nil (session))
  ;; set time interval of echo area
