@@ -4,11 +4,14 @@
 ;; set path:
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
-(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
-(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
+;;(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
+;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
+
+(global-set-key "\M-]" 'comint-dynamic-complete-filename)
 
 ;;; load packages
 (require 'init-setupterm)
+(require 'init-macros)
 (require-package 'cal-china-x)
 (require 'cal-china-x)
 (setq mark-holidays-in-calendar t
@@ -38,6 +41,7 @@
 ;;       auto-mode-alist (cons '("\\.jl$"         . sawfish-mode) auto-mode-alist)
 ;;       auto-mode-alist (cons '("\\.sawfish/rc$" . sawfish-mode) auto-mode-alist))
 
+
 (setq display-time-format "%Y-%m-%d %H:%M")
 
 (setq sdcv-dictionary-simple-list        ;; a simple dictionary list
@@ -58,7 +62,7 @@
 ;; 		"汉语大词典 离线版"
 ;; 		"中文维基百科"
 ;;         ))
-(global-set-key (kbd "C-c d") 'sdcv-search-pointer+)
+(global-set-key (kbd "C-x t") 'sdcv-search-pointer+)
 
 (display-time-mode 1)
 
@@ -130,23 +134,23 @@
 
 ;;; modify details of theme
 (custom-set-faces
-  '(org-link ((t (:underline t))))
-)
+ '(org-link ((t (:underline t))))
+ )
 
 
 ;;; org-mode settings
 (setq org-startup-indented t)
 (setq org-capture-templates
-	  '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
-		 "* TODO %?\n  %i\n  %a")
-		("j" "Journal" entry (file+datetree "~/org/journal.org")
-		 "* %?\nEntered on %U\n  %i\n  %a")
-		("l" "Link" plain (file (concat org-directory "/links.org"))
-		 "- %?\n %x\n")))
+      '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+         "* TODO %?\n  %i\n  %a")
+        ("j" "Journal" entry (file+datetree "~/org/journal.org")
+         "* %?\nEntered on %U\n  %i\n  %a")
+        ("l" "Link" plain (file (concat org-directory "/links.org"))
+         "- %?\n %x\n")))
 ;; active Babel languages
 (org-babel-do-load-languages
-   'org-babel-load-languages
-    '((sql . t)))
+ 'org-babel-load-languages
+ '((sql . t)))
 
 ;;; bind key dwim
 (defun qiang-comment-dwim-line (&optional arg)
@@ -154,8 +158,8 @@
   (interactive "*P")
   (comment-normalize-vars)
   (if (and (not (region-active-p)) (not (looking-at "[ \t]*$")))
-	(comment-or-uncomment-region (line-beginning-position) (line-end-position))
-	(comment-dwim arg)))
+      (comment-or-uncomment-region (line-beginning-position) (line-end-position))
+    (comment-dwim arg)))
 (global-set-key "\M-;" 'qiang-comment-dwim-line)
 
 
@@ -164,11 +168,12 @@
   "Find a recent file using ido."
   (interactive)
   (let ((file (ido-completing-read "Choose recent file: " recentf-list nil t)))
-	(when file
-	  (find-file file))))
-;(recentf-mode 1) ; keep a list of recently opened files
+    (when file
+      (find-file file))))
+
+;;(recentf-mode 1) ; keep a list of recently opened files
 ;; set F7 to list recently opened file
-(global-set-key (kbd "<f7>") 'recentf-ido-find-file)
+;;(global-set-key (kbd "<f7>") 'recentf-ido-find-file)
 
 (defun kill-buffer-and-window-other ()
   "kill the other buffer and its windows"
@@ -192,6 +197,46 @@
       (write-file (concat "/sudo:root@localhost:" (ido-read-file-name "File:")))
     (write-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
+(defun ly/proxy ()
+  "set/unset proxy"
+  (interactive)
+  (setq proxytype (read-from-minibuffer "(s)ocks/(h)ttp/(n)il? "))
+  (setq url-gateway-method 'native)
+  (setq url-proxy-services nil)
+  (message "unset proxy!")
+  (if (string= proxytype "s")
+      (progn
+        (setq socks-noproxy '("127.0.0.1"))
+        (setq socks-server '("Default server" "127.0.0.1" 8081 5))
+        (setq url-gateway-method 'socks)
+        (message "set proxy to sock5!"))
+    (when (string= proxytype "h")
+      (setq url-proxy-services
+            '(("no_proxy" . "^\\(localhost\\|192.168.1.*\\)")
+              ("http" . "127.0.0.1:8080")
+              ("https" . "127.0.0.1:8080")))
+      (message "set proxy to http!"))))
+
+(defun display-ansi-colors ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (ansi-color-apply-on-region (point-min) (point-max))))
+
+;; http://emacs.stackexchange.com/questions/2206/i-want-to-have-the-kbd-tags-for-my-blog-written-in-org-mode/2208#2208
+(defun ly/insert-key (key)
+  "Ask for a KEY then insert its description.
+Will work on both `org-mode' and any mode that accepts plain html."
+  (interactive "kType key sequence: ")
+  (let* ((is-org-mode (derived-mode-p 'org-mode))
+         (tag (if is-org-mode
+                  "@@html:<kbd>%s</kbd>@@"
+                "<kbd>%s</kbd>")))
+    (if (null (equal key "\r"))
+        (insert
+         (format tag (help-key-description key nil)))
+      (insert (format tag ""))
+      (forward-char (if is-org-mode -8 -6)))))
+(define-key org-mode-map "\C-ck" #'endless/insert-key)
 
 (provide 'init-local)
 ;;; init-local.el ends here
