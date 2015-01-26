@@ -76,6 +76,7 @@
 ;; (setq fci-dash-pattern .40)
 ;; (add-hook 'after-change-major-mode-hook 'fci-mode)
 (add-hook 'python-mode-hook 'fci-mode)
+(add-hook 'org-mode-hook 'fci-mode)
 
 ;; Dired reuse directory buffer
 ;; (toggle-diredp-find-file-reuse-dir 1)
