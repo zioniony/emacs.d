@@ -5,6 +5,7 @@
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
 ;;(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
+(setenv "PYTHONPATH" "/home/ly/work")
 ;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
@@ -131,9 +132,12 @@
  '(multi-term-program "/bin/zsh")
  '(org-taskjuggler-process-command "tj3 --no-color --output-dir %o %f")
  '(org-taskjuggler-reports-directory "output")
+ '(org-confirm-babel-evaluate nil)
  ;; python
- '(python-shell-interpreter-args "-i --gui=qt4")
- '(python-shell-interpreter-interactive-arg "-i --gui=qt4")
+ '(python-shell-interpreter-args "-i")
+ '(python-shell-interpreter-interactive-arg "-i")
+                                        ;'(python-shell-interpreter-args "-i --gui=qt4")
+                                        ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
  ;; ess latex
  '(TeX-engine (quote xetex))
  '(ess-swv-pdflatex-commands '("xelatex"))
@@ -169,7 +173,8 @@
 ;; active Babel languages
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((sql . t)))
+ '((sql . t) (python . t) (R .t)))
+
 
 ;;; bind key dwim
 (defun qiang-comment-dwim-line (&optional arg)
@@ -268,6 +273,18 @@ Will work on both `org-mode' and any mode that accepts plain html."
       (insert (format tag ""))
       (forward-char (if is-org-mode -8 -6)))))
 (define-key org-mode-map "\C-ck" #'endless/insert-key)
+
+(define-skeleton org-skeleton
+  "Header info for a emacs-org file."
+  "Title: "
+  "#+TITLE:" str " \n"
+  "#+AUTHOR: Your Name\n"
+  "#+email: your-email@server.com\n"
+  "#+INFOJS_OPT: \n"
+  "#+BABEL: :session *R* :cache yes :results output graphics :exports both :tangle yes \n"
+  "-----"
+  )
+(global-set-key [C-S-f4] 'org-skeleton)
 
 (provide 'init-local)
 ;;; init-local.el ends here
