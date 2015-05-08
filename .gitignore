@@ -35,10 +35,5 @@ site-lisp/package/
 /eshell
 /.cask/
 /.sx/
-<<<<<<< HEAD
-/ido.last
-/recentf
-=======
 /org-clock-save.el
-/ditaa.jar
->>>>>>> 4218a1dbb13e3f1794eb564df8acdb0e61941fae
+/ditaa*.jar

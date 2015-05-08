@@ -1,0 +1,215 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/ly/.local/lib/python2.7/site-packages/" . "quixote/")
+ ("/home/ly/work/xytinc/pyserver/scgioms/" . "demo/")
+ ("/home/ly/work/xytinc/ebay/python-ebay/" . "tests/")
+ ("/home/ly/.local/lib/python2.7/site-packages/quixote/" . "form/")
+ ("/home/ly/.local/lib/python2.7/" . "site-packages/")
+ ("/home/ly/.local/lib/" . "python2.7/")
+ ("/home/ly/.local/" . "lib/")
+ ("/home/ly/work/xytinc/ebay/ebaylms/" . "examples/")
+ ("/home/ly/work/xytinc/ebay/eBay-LMS-API/" . "examples/")
+ ("/home/ly/work/xytinc/ebay/" . "eBay-LMS-API/")
+ ("/home/ly/work/xytinc/pyserver/" . "demo/")
+ ("/home/ly/work/xytinc/graphdigitize/src/" . "example/")
+ ("/home/ly/tmp/" . "ebay/")
+ ("/home/ly/work/xytinc/graphdigitize/" . "src/")
+ ("/home/ly/.emacs.d/elpa/realgud-20150204.457/realgud/" . "common/")
+ ("/home/ly/.emacs.d/elpa/" . "realgud-20150204.457/")
+ ("/home/ly/.emacs.d/site-lisp/" . "org/")
+ ("/home/ly/.emacs.d/" . "site-lisp/")
+ ("/home/ly/work/xytinc/webgrap/" . "src/")
+ ("/home/ly/" . ".local/")
+ ("/home/ly/work/xytinc/early_comparation/" . "src/")
+ ("/home/ly/work/xytinc/" . "pyserver/")
+ ("/home/ly/work/" . "xytinc/")
+ ("/home/ly/.pentadactyl/" . "plugins/")
+ ("/home/ly/documents/" . "signature/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/ly/work/xytinc/ebay/"
+ "/home/ly/.local/lib/python2.7/site-packages/quixote/"
+ "/home/ly/.local/lib/python2.7/site-packages/quixote/form/"
+ "/home/ly/work/xytinc/pyserver/demo/"
+ "/home/ly/work/xytinc/pyserver/scgisrv/"
+ "/home/ly/work/xytinc/chukou1/"
+ "/home/ly/work/xytinc/pyserver/"
+ "/home/ly/tmp/"
+ "/home/ly/work/xytinc/omsthreadpool/"
+ "/home/ly/work/xytinc/pyserver/test/"
+ "/home/ly/.local/lib/python2.7/site-packages/ebay/"
+ "/home/ly/.emacs.d/lisp/"
+ "/home/ly/work/xytinc/cdc/"
+ "/home/ly/work/xytinc/pyserver/scgioms/demo/"
+ "/home/ly/work/xytinc/"
+ "/home/ly/tmp/ebay/"
+ "/home/ly/work/xytinc/ebay/python-ebay/tests/"
+ "/home/ly/.local/lib/python2.7/site-packages/quixote/server/"
+ "/home/ly/.local/lib/python2.7/site-packages/scgi/"
+ "/home/ly/work/xytinc/webgrap/"
+ "/home/ly/work/xytinc/ebay/ebaylms/"
+ "/home/ly/work/xytinc/ebay/ebaylms/examples/"
+ "/home/ly/work/xytinc/ebay/eBay-LMS-API/examples/"
+ "/home/ly/work/xytinc/pyserver/cfg/"
+ "/home/ly/work/xytinc/webgrap/src/"
+ "/home/ly/work/xytinc/graphdigitize/src/example/"
+ "/home/ly/work/xytinc/schedule/"
+ "/home/ly/tmp/img2txt/"
+ "/home/ly/work/xytinc/graphdigitize/src/"
+ "/home/ly/org/"
+ "/home/ly/.emacs.d/elpa/realgud-20150204.457/"
+ "/home/ly/work/xytinc/early_comparation/src/"
+ "/home/ly/work/xytinc/webgrap/src/test/"
+ "/home/ly/work/xytinc/webgrap/test/"
+ "/home/ly/.emacs.d/site-lisp/org/"
+ "/home/ly/.fvwm/"
+ "/home/ly/.pentadactyl/plugins/"
+ "/home/ly/"
+ "/home/ly/documents/signature/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "ebaytokenstat.py"
+ "直发订单快速导出.txt"
+ "out.sql"
+ "http_request.py"
+ "publish.py"
+ "__init__.py"
+ "widget.py"
+ "extras.ptl"
+ "forms.ptl"
+ "storage.ptl"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/ly/work/xytinc/ebay/" (21835 11693 611541 617000) "ebaytokenstat.py" "localorder.py" "ebay.xls" "localorder.pyc" "survey.org" "市场调查数据-ted.docx" "test.xml" "uid.txt" "rst.xml" "pkbk/" "sellerweekly-20150507.xlsx" "out_V3.xlsx" "data/" "cfg/" "ebay.csv" "./" "ebaytokenstat.pyc" "__init__.pyc" "price_check.pyc" "ebaylms/" "ghostdriver.log" "productinfo1.xlsx" "ebst.py" "tokendataextract.py" "out1.xlsx" "orderexport.sql" "output/" "pkl/" "timecost.pkl" "storagemanage.pyc" "../" "ebayapi/" "__init__.py" "usersummary.py" "itemlist/" "usersummary.pyc" ".~lock.price1.xlsx#" "jsonextract.py" "apitest.py" "ebaytokenstat1.pyc" "nohup.out" "ebay_addr_threads.py" "直发订单快速导出.txt" "timecost.htm" "ebayschema.sql" "out_V4.xlsx" "ebaytokenstat1.py" "ebay_scrape.py" "seller_weekly.py" "localorder_.py" "storagemanage.py" "productinfo.xlsx" "out_V5.xlsx" "需求描述.org" "out.sql" "invalidsku.xlsx" "expr.pkl" "output.xlsx" "out_V2.xlsx" "pel.pdpk" "scig_test.py" "#直发订单快速导出.txt#" "cache_0.htm" "tst.py" "ttt.csv" "ebay_addr.py" "python-ebay/" "report.sql" "price_check.py")
+
+ ("/home/ly/work/xytinc/pyserver/" (21831 3382 636973 776000) "scgisrv/" "test.py" "ebay账号.txt" "data/" "cfg/" "./" "main.py" "__init__.pyc" "demo.conf" "ghostdriver.log" "output/" "scgiserver.py" "index.html" "../" "scgifactory.pyc" "__init__.py" "test/" "xmlrpc_server.py" "pricestd.csv" "scgioms/" "scgi_server.py" "demo_scgi.sh" "demo/" "scgifactory.py" "main.pyc")
+
+ ("/home/ly/work/xytinc/chukou1/" (21830 50034 10875 867000) "tmp/" "ckyapi.py" "cfg/" "./" "__init__.pyc" "#freight_allot.py#" "../" "__init__.py" "freight_allot.py" "conf/" "freight_allot.pyc")
+
+ ("/home/ly/work/xytinc/omsthreadpool/" (21830 50628 870857 951000) "multitheading.py" "./" "main.py" "__init__.pyc" "../" "__init__.py" "server.py" "server.pyc" "scgifactory.py" "main.pyc")
+
+ ("/home/ly/tmp/" (21830 50090 867540 821000) "../" "./")
+
+ ("/home/ly/" (21830 51022 634179 424000) ".gstreamer-0.10/" ".purple/" ".macromedia/" ".psql_history" ".texlive/" "bin/" ".links/" "tmp/" ".pgpass" ".gnome2/" ".emacs.d/" ".gitconfig" ".subversion/" ".nvidia-settings-rc" ".odbc.ini" ".viminfo" ".zshrc" "./" ".mozilla/" ".python_history" ".projectlibre/" ".cache/" "public/" ".zshrc.zni" ".pgadmin3" "pgadmin.log" ".Xauthority" ".xinitrc" ".lesshst" ".zcompdump" ".ganttproject" ".config/" ".zshrc_0609_10.08" ".vimrc" "R/" ".idlerc/" ".mysql_history" ".texlive2010/" "../" ".pgadmin_histoqueries" ".fvwm/" "downloads/" ".zshrc_0608_10.35" ".vim/" ".stalonetrayrc" ".kde4.backup/" ".zshrc_6.7_23.19" ".gnome/" ".java/" ".gmrun_history" ".gnome2_private/" "snapshot/" ".xsession-errors" ".zshhistory" ".db.py_sqlebstorage" ".conkyrc" ".sdcv_history" "org/" "Downloads/" "work/" ".pki/" ".weechat/" ".ganttproject.d/" ".thumbnails/" ".theano/" ".gnupg/" ".pentadactylrc" ".qws/" ".freemind/" ".mysql/" ".oh-my-zsh/" ".R/" "temp/" "documents/" ".transcmdline/" ".Rprofile" ".thunderbird/" ".tencent/" ".pentadactyl/" ".gimp-2.8/" ".histfile" ".gitignore" ".VBoxVMs/" ".zshrc.my" ".bash_history" ".xmodmaprc" ".nvsetting" ".local/" ".fehbg" ".ssh/" ".dbus/" ".stardict/" ".gem/" ".ipython/" ".kde4/" ".viminfo.back" "setups/" ".zsh/" ".my.cnf" ".Xresources" ".adobe/" "Desktop/" ".dia/")
+
+ ("/home/ly/.fvwm/" (21824 15318 173972 524000) "conky/" "config.test_0907_1140.back" "config_140911.1930" "config.0531_13.43" "config.09081850" "config" "./" "wallpapers/" "icons/" "config.test" "system.fvwm2rc-sample-95" "keep/" ".FvwmConsole-History" "../" "bak/" "configtst" "nohup.out" "config.0530_16.46" "scripts/" "system.fvwm2rc-sample-1" "config.0530_08.56" "config.0530_12.35" "config.0601_08.47" ".xmodmaprc" "config.0530_16.15" "config.0531_13.05" "system.fvwm2rc-sample-2" "images/" "config.0530_11.32" ".Xresources")
+
+ ("/home/ly/.emacs.d/lisp/" (21824 19958 901007 738000) "init-compat.el" "init-osx-keys.el" "init-vc.el" "init-utils.el" "init-html.el" "init-csv.el" "init-site-lisp.el" "init-paredit.el" "init-benchmarking.el" "init-windows.el" "init-ido.el" "./" "init-crontab.el" "init-fonts.el" "init-css.el" "init-gui-frames.el" "init-dash.el" "init-rails.el" "init-php.el" "init-markdown.el" "init-common-lisp.el" "init-slime.el" "init-haml.el" "init-clojure-cider.el" "init-haskell.el" "init-nxml.el" "init-setupterm.el" "init-isearch.el" "init-elpa.el" ".dir-locals.el" "init-locales.el" "init-git.el" "../" "init-frame-hooks.el" "init-macros.el" "init-flycheck.el" "init-editing-utils.el" "init-erlang.el" "init-lisp.el" "init-textile.el" "init-hippie-expand.el" "init-local.el" "init-recentf.el" "init-sessions.el" "init-xterm.el" "init-auto-complete.el" "init-uniquify.el" "init-dired.el" "init-exec-path.el" "init-javascript.el" "init-misc.el" "init-flyspell.el" "init-compile.el" "init-python-mode.el" "init-darcs.el" "init-ibuffer.el" "init-org.el" "init-sql.el" "init-themes.el" "init-ruby-mode.el" "init-grep.el" "init-ledger.el" "init-github.el" "init-clojure.el" "init-spelling.el" "init-mmm.el" "init-proxies.el")
+
+ ("/home/ly/work/xytinc/pyserver/scgisrv/" (21824 33458 257267 838000) "forms.ptl" "altdemo.pyc" "root.ptl" "./" "__init__.pyc" "simple_server.py" "../" "__init__.py" "mini_demo.pyc" "extras.ptl" "mini_demo.py" "integers.ptl" "storage.pyc" "altdemo.py" "storage.ptl")
+
+ ("/home/ly/.local/lib/python2.7/site-packages/quixote/server/" (21815 2294 873796 135000) "medusa_server.pyc" "twisted_server.py" "cgi_server.py" "twisted_server.pyc" "scgi_server.pyc" "./" "_fcgi.py" "__init__.pyc" "cgi_server.pyc" "util.pyc" "mod_python_handler.py" "simple_server.py" "../" "fastcgi_server.py" "__init__.py" "medusa_server.py" "simple_server.pyc" "_fcgi.pyc" "scgi_server.py" "fastcgi_server.pyc" "util.py" "mod_python_handler.pyc")
+
+ ("/home/ly/work/xytinc/cdc/" (21822 56128 432971 609000) "knet.png" "testa.out" "test1.pdf" "testa.toc" "tb.pdf" "tb.org" "out-eps-converted-to.pdf" "testb.html" "cdcstats.py" "./" "out.eps" "missfont.log" "test.org" "tables.sql" "testa.tex" "test1.tex" "tb.tex" "../" "datamodel.mwb.bak" "test.pdf" "testa.aux" "rst.png" "testb.org" "tb.toc" "rst.pdf" "test1.org" "testa.log" "tb.html" "datamodel.mwb" "tb.aux" "tb.out" "tb.log" "cdc_15-struct.sql" "out.pdf" "out.png" "rst.eps" "testa.pdf" "test.tex" "images/" "testb.tex" "testb.pdf" "test.html" "tba.tex")
+
+ ("/home/ly/work/xytinc/pyserver/test/" (21815 7812 963629 944000) "file80.txt" "file150.txt" "./" "file120.txt" "file300.txt" "../")
+
+ ("/home/ly/work/xytinc/pyserver/demo/" (21815 3215 293768 414000) "forms.ptl" "altdemo.pyc" "root.ptl" "root.pyc" "xmlrpcdemo.py" "./" "__init__.pyc" "simple_server.py" "../" "scgifactory.pyc" "__init__.py" "integers.pyc" "mini_demo.pyc" "extras.ptl" "mini_demo.py" "integers.ptl" "extras.pyc" "altdemo.py" "scgifactory.py")
+
+ ("/home/ly/work/xytinc/pyserver/data/" (21787 29227 138565 6000) "file5_5.htm" "file5_1.htm" "file3_2.htm" "./" "file5_10.htm" "file3_1.htm" "file5_8.htm" "file9_0.htm" "file8_3.htm" "file2_1.htm" "file2_0.htm" "file7_3.htm" "file8_0.htm" "file0_0.htm" "file7_0.htm" "../" "file8_7.htm" "file5_3.htm" "file8_6.htm" "file5_2.htm" "file5_0.htm" "file5_7.htm" "file5_9.htm" "file6_0.htm" "file7_1.htm" "file1_0.htm" "file8_5.htm" "file8_4.htm" "file5_4.htm" "file3_3.htm" "file5_6.htm" "file8_1.htm" "file4_0.htm" "file7_2.htm" "file8_2.htm" "file3_0.htm")
+
+ ("/home/ly/work/xytinc/pyserver/scgioms/" (21788 38575 541936 507000) "./" "__init__.pyc" "../" "__init__.py")
+
+ ("/home/ly/work/xytinc/" (21807 36721 663259 410000) "schedule/" "ebay/" "data/" "./" "graphdigitize/" "chukou1/" "webgrap/" "__init__.pyc" "refs/" "pyserver/" "../" "__init__.py" "early_comparation/" "omsthreadpool/" ".gitignore" ".git/" "cdc/")
+
+ ("/home/ly/work/" (21796 34036 672556 922000) "./" "../" "xytinc/" "svn/")
+
+ ("/home/ly/org/" (21790 19266 251120 969000) "./" "../" "#gtd.org#" "links.org" "projects.org" "journal.org" "gtd.org" "newgtd.org" "git.org")
+
+ ("/home/ly/work/xytinc/schedule/" (21796 34512 202542 601000) "./" "output/" "../" ".~lock.技术部20150302项目进度状态汇报-2.pptx#" "schedule.tjp")
+
+ ("/home/ly/work/xytinc/ebay/ebaylms/" (21796 34181 712552 551000) "examples/" "./" "sb_credentials.json.example" "__init__.pyc" "credentials.json.example" "lmslib.py" "README" "../" "__init__.py" "sb_credentials.json.1" "credentials.json" "lmslib.pyc" "LICENSE.txt" "sb_credentials.json" "sb_credentials.json.2")
+
+ ("/home/ly/work/xytinc/webgrap/" (21796 34162 9219 815000) "webscrape.py" "phantomjsexample.js" "./" "output.txt" "ghostdriver.log" "../" "captcha.py" "__init__.py" "test/")
+
+ ("/home/ly/.local/lib/python2.7/site-packages/ebay/" (21795 40341 514140 951000) "utils.pyc" "product.pyc" "client_alerts.py" "shopping.pyc" "utils.py" "merchandising.py" "./" "merchandising.pyc" "__init__.pyc" "feedback.pyc" "client_alerts.pyc" "platform_notifications.py" "../" "trading.pyc" "__init__.py" "product.py" "finding.pyc" "resolution_case_management.pyc" "resolution_case_management.py" "research.py" "trading.py" "shopping.py" "finding.py" "platform_notifications.pyc" "#trading.py#" "config.ini" "research.pyc" "feedback.py" "best_match.py" "best_match.pyc" "config.ini.example")
+
+ ("/home/ly/.local/lib/python2.7/site-packages/" (21779 24799 78661 974000) "rpy2/" "jsonquery.pyc" "ebay/" "singledispatch_helpers.pyc" "SQLAlchemy-0.9.9-py2.7.egg-info/" "singledispatch.py" "./" "rpy2-2.5.6-py2.7.egg-info/" "jsonpath_rw-1.3.0-py2.7.egg-info/" "json_lxml.py" "quixote/" "sqlalchemy/" "jsonquery.py" "../" "singledispatch.pyc" "scgi-1.8-py2.7.egg-info/" "requests/" "singledispatch-3.4.0.3.dist-info/" "xvfbwrapper-0.2.4-py2.7.egg-info/" "ply/" "xvfbwrapper.pyc" "jsonquery-1.0.1-py2.7.egg-info/" "jsonpath_rw/" "Quixote-2.8-py2.7.egg-info/" "json_lxml-0.1.3-py2.7.egg-info/" "scgi/" "python_ebay-0.2.0b5.dev0-py2.7.egg-info/" "json_lxml.pyc" "ply-3.4-py2.7.egg-info/" "singledispatch_helpers.py" "requests-2.5.3.dist-info/" "xvfbwrapper.py")
+
+ ("/home/ly/work/xytinc/pyserver/scgioms/demo/" (21787 43078 698440 209000) "forms.ptl" "altdemo.pyc" "root.ptl" "root.pyc" "./" "__init__.pyc" "simple_server.py" "../" "scgifactory.pyc" "__init__.py" "integers.pyc" "mini_demo.pyc" "extras.ptl" "mini_demo.py" "integers.ptl" "extras.pyc" "altdemo.py" "scgifactory.py")
+
+ ("/home/ly/tmp/ebay/" (21786 8372 718617 634000) "cfg/" "itemlist/" "pkl/" "ebay_addr_threads.py" "Readme.txt" "id_rsa_croot" "readme.tar.gz" "../" "./")
+
+ ("/home/ly/work/xytinc/ebay/python-ebay/tests/" (21784 61137 728696 789000) "test_resolution_case_management.py" "./" "test_product.py" "test_shopping.py" "../" "test_alternative_config.py" "test_feedback.py" "__init__.py" "test_client_alerts.py" "test_merchandising.py" "#test_finding.py#" "test_finding.py" "test_best_match.py")
+
+ ("/home/ly/work/xytinc/ebay/python-ebay/" (21778 28864 204519 556000) "setup.py" "ebay/" "examples/" "README.rst" "./" "../" "tests/" "release.py" "setup.cfg" ".gitignore" ".git/" "MANIFEST.in")
+
+ ("/home/ly/work/xytinc/webgrap/test/" (21774 23859 360966 481000) "test.py" "./" "ghostdriver.log" "../" "test.py~" "__pycache__/")
+
+ ("/home/ly/work/xytinc/early_comparation/src/" (21774 23859 420966 486000) "products1.html" "process.pdf" "./" "process.tex" "products1.org" "products.html" "../" "main.org" "process.log" "flow.org" "process.dvi" ".Rhistory" "process.aux" "products.org" "texput.log" "process.Rnw")
+
+ ("/home/ly/work/xytinc/pyserver/cfg/" (21777 40516 935233 654000) "config.xml" "./" "../" "ck1.xml")
+
+ ("/home/ly/work/xytinc/ebay/ebaylms/examples/" (21774 23859 644299 835000) "./" "../" "api_test.py" "AddItem.xml")
+
+ ("/home/ly/.local/lib/python2.7/site-packages/scgi/" (21778 4482 215253 882000) "scgi_server.pyc" "passfd.so" "./" "quixote_handler.py" "__init__.pyc" "test_passfd.pyc" "test_passfd.py" "../" "__init__.py" "scgi_server.py" "quixote_handler.pyc")
+
+ ("/home/ly/.local/lib/python2.7/site-packages/quixote/" (21777 2434 240363 979000) "sendmail.pyc" "publish.pyc" "ptl/" "http_response.pyc" "./" "session.pyc" "__init__.pyc" "logger.pyc" "errors.py" "publish1.py" "directory.pyc" "util.pyc" "wsgi.py" "server/" "../" "__init__.py" "session.py" "errors.pyc" "directory.py" "logger.py" "form/" "config.py" "sendmail.py" "html/" "publish.py" "http_response.py" "wsgi.pyc" "http_request.pyc" "demo/" "config.pyc" "util.py" "http_request.py" "publish1.pyc")
+
+ ("/home/ly/.local/lib/python2.7/" (21757 3351 108544 821000) "./" "../" "site-packages/")
+
+ ("/home/ly/.local/lib/" (21757 3351 108544 821000) "./" "../" "python2.7/")
+
+ ("/home/ly/.local/" (21761 1488 685386 921000) "ebay/" "bin/" "share/" "./" "lib/" "../")
+
+ ("/home/ly/.emacs.d/" (21775 51056 758558 869000) "lisp/" "var/" "./" ".smex-items" "image-dired/" "site-lisp/" "recentf" "init.el" "auto-save-list/" ".emacs.desktop.lock" "../" "ido.last" "LICENSE" ".session" ".agignore" "README.md" ".emacs.desktop" "url/" "history" ".gitignore" "ac-comphist.dat" ".git/" ".mc-lists.el" "elpa/")
+
+ ("/home/ly/work/xytinc/ebay/eBay-LMS-API/examples/" (21766 27941 575315 285000) "./" "../" "api_test.py" "AddItem.xml")
+
+ ("/home/ly/work/xytinc/ebay/eBay-LMS-API/" (21766 28091 291980 604000) "examples/" "./" "lmslib.py" "README" "../" "__init__.py" "credentials.json" "LICENSE.txt" "sb_credentials.json" ".git/")
+
+ ("/home/ly/work/xytinc/webgrap/src/" (21759 37551 862106 332000) "webscrape.py" "phantomjsexample.js" "./" "output.txt" "ghostdriver.log" "../" "captcha.py" "test/")
+
+ ("/home/ly/work/xytinc/graphdigitize/src/" (21750 22529 2066 372000) "./" "ocr.py" "plotdigitiser.py" "../" "graphdigitize.py" "example/")
+
+ ("/home/ly/work/xytinc/graphdigitize/src/example/" (21742 31594 558550 40000) "graph.png" "lena.ppm" "./" "img1.jpg" "img2.png" "eg1.py" "eg2.py" "../" "noise.png" ".Rhistory" ".RData" "lena.png" "curve.csv")
+
+ ("/home/ly/tmp/img2txt/" (21725 24223 468422 346000) "address/" "error/" "font/" "freq.txt" "img2txt.py" "num1.png" "num2.png" "num3.png" "num4.png" "num5.png" "output" "../" "./")
+
+ ("/home/ly/work/xytinc/graphdigitize/" (21721 30266 468342 460000) "./" "src/" "../")
+
+ ("/home/ly/documents/signature/" (21716 24159 694710 450000) "xytinc.htm" "./" "general.htm" "../" "huawei.htm" "pactera.htm")
+
+ ("/home/ly/work/xytinc/webgrap/src/test/" (21716 21192 291466 487000) "test.py" "./" "ghostdriver.log" "../" "test.py~" "__pycache__/")
+
+ ("/home/ly/.emacs.d/elpa/realgud-20150204.457/realgud/common/" (21716 6651 741904 414000) "track-mode.elc" "bp-image-data.elc" "run.elc" "backtrack-mode.el" "fringe.elc" "fringe.el" "helper.elc" "reset.elc" "init.elc" "window.elc" "follow.el" "./" "cmds.elc" "shortkey.el" "track.elc" "file.elc" "track-mode.el" "custom.el" "backtrace-mode.el" "bp.elc" "init.el" "attach.el" "menu.el" "lochist.el" "custom.elc" "follow.elc" "../" "regexp.elc" "bp.el" "run.el" "lochist.elc" "lang.elc" "shortkey.elc" "cmds.el" "window.el" "key.elc" "buffer/" "bp-image-data.el" "send.elc" "loc.el" "backtrack-mode.elc" "core.el" "key.el" "loc.elc" "helper.el" "track.el" "regexp.el" "reset.el" "backtrace-mode.elc" "core.elc" "file.el" "send.el" "lang.el" "attach.elc" "menu.elc")
+
+ ("/home/ly/.emacs.d/elpa/realgud-20150204.457/realgud/" (21716 6648 808571 168000) "./" "../" "lang/" "common/" "debugger/")
+
+ ("/home/ly/.emacs.d/elpa/realgud-20150204.457/" (21716 7812 625202 784000) "realgud.elc" "./" "realgud.el" "realgud-pkg.el" "../" "realgud/" "realgud-autoloads.el")
+
+ ("/home/ly/.emacs.d/elpa/" (21716 6863 38564 715000) "simple-httpd-20140908.1908/" "scratch-20120830.1028/" "magit-svn-90150116/" "browse-kill-ring-20150104.1237/" "let-alist-1.0.3.signed" "erlang-20141104.17/" "pkg-info-20140610.630/" "cljsbuild-mode-20140619.126/" "git-rebase-mode-20150122.1114/" "regex-tool-20131104.1434/" "git-messenger-20140923.738/" "haml-mode-20141213.920/" "wgrep-20141016.1656/" "lua-mode-20141025.1746/" "project-local-variables-20080502.1652/" "gh-20150126.1125/" "fill-column-indicator-20140509.1101/" "lively-20120728.1413/" "tangotango-theme-20150113.517/" "rinari-20141021.827/" "slime-20150127.1552/" "ess-20150202.1034/" "cl-lib-highlight-20140127.1312/" "skewer-mode-20141215.1525/" "scss-mode-20150107.1400/" "json-snatcher-20140527.2147/" "realgud-20150204.457/" "highlight-indentation-20150122.44/" "multiple-cursors-20150101.1431/" "dired+-20150203.521/" "js2-mode-20150202/" "cal-china-x-20140907.855/" "hl-sexp-20101130.443/" "bug-reference-github-20131202.1303/" "diff-hl-20150113.2113/" "paredit-everywhere-20140906.210/" "idomenu-20141123.1320/" "hi2-20141005.1231/" "gitconfig-mode-20140605.520/" "highlight-escape-sequences-20130531.1512/" "unfill-20131103.213/" "rainbow-mode-0.10.signed" "yagist-20140321.1512/" "anzu-20150203.708/" "gnuplot-20141231.1337/" "smex-20141210.1422/" "auctex-11.88.2.signed" "logito-20120225.1255/" "vc-darcs-20141122.1326/" "switch-window-20150114.215/" "pcache-20150125.1653/" "flycheck-package-20150123.624/" "archives/" "csv-mode-1.2/" "highlight-quoted-20140916.1122/" "gntp-20141024.1950/" "smarty-mode-20100703.458/" "ledger-mode-20150121.527/" "inflections-20121016.157/" "dash-20141220.1452/" "ido-ubiquitous-20141210.1353/" "ess-smart-underscore-20131229.1851/" "markdown-mode-20150121.1229/" "auto-complete-20150201.150/" "tidy-20111222.1756/" "move-dup-20140925.808/" "haskell-mode-20150202.632/" "ipretty-20140406.2220/" "adoc-mode-20150102.835/" "flycheck-clojure-20150116.234/" "sass-mode-20141219.324/" "macrostep-20141014.2350/" "aggressive-indent-20150202.548/" "flycheck-hdevtools-20140829.853/" "session-20120510.1700/" "flycheck-ledger-20140605.1146/" "electric-spacing-5.0/" "company-20150204.836/" "findr-20130824.1207/" "whitespace-cleanup-mode-20141230.1120/" "showtip-20080330.259/" "pip-requirements-20150103.445/" "gitignore-mode-20140605.520/" "hippie-expand-slime-20130907.132/" "org-pomodoro-20140908.646/" "git-blame-20110509.926/" "yasnippet-20141223.303/" "cider-20150201.1117/" "alert-20141222.1703/" "js-comint-20080530.757/" "github-browse-file-20141102.1040/" "ac-haskell-process-20150204.1104/" "ibuffer-vc-20141013.742/" "elpy-20141031.945/" "mmm-mode-20150117.239/" "wgrep-ag-20141012.311/" "gnupg/" "undo-tree-20140509.522/" "ac-cider-20141231.901/" "electric-spacing-5.0.signed" "robe-20150126.808/" "css-eldoc-20150124.1923/" "ac-js2-20140809.2217/" "queue-0.1.1.signed" "yari-20140206.611/" "inf-ruby-20141005.550/" "packed-20150122.2048/" "textile-mode-20120721.1258/" "json-mode-20141105.138/" "git-timemachine-20141107.1305/" "popwin-20141227.2351/" "less-css-mode-20140919.524/" "guide-key-20150107.2235/" "elein-20120120.316/" "ac-slime-20141002.639/" "s-20140910.334/" "skewer-less-20131015.622/" "flycheck-20150125.601/" "magit-90150116/" "dsvn-20130120.1257/" "load-relative-20141216.1331/" "json-reformat-20141210.1656/" "ghci-completion-20140316.2331/" "ac-inf-ruby-20131115.350/" "github-clone-20141006.210/" "git-commit-mode-20141014.1634/" "expand-region-20141223.1328/" "color-theme-sanityinc-tomorrow-20150201.1321/" "flycheck-haskell-20150112.125/" "ruby-hash-syntax-20141010.839/" "redshank-20120510.1230/" "loc-changes-20141216.1346/" "popup-20150116.1223/" "ruby-compilation-20140620.217/" "highlight-symbol-20140923.729/" "elisp-slime-nav-20141224.854/" "test-simple-20141216.1325/" "auto-complete-auctex-20140223.958/" "rainbow-mode-0.10/" "tagedit-20141021.2139/" "htmlize-20130207.1202/" "darcsum-20140315.2110/" "color-theme-sanityinc-solarized-20150201.1326/" "rainbow-delimiters-20141221.925/" "exec-path-from-shell-20141212.846/" "ace-jump-mode-20140616.115/" "js2-mode-20150202.signed" "yaml-mode-20141125.37/" "dired-sort-20090209.438/" "csv-mode-1.2.signed" "page-break-lines-20141228.1130/" "diminish-20091203.1012/" "find-file-in-project-20141214.1952/" "clojure-mode-20150113.1048/" "ess-R-data-view-20130509.458/" "jump-20130702.33/" "paredit-20150126.155/" "coffee-mode-20150130.1627/" "crontab-mode-20090510.1355/" "queue-0.1.1/" "markup-faces-20130117.246/" "hayoo-20140831.521/" "fullframe-20140619.305/" "let-alist-1.0.3/" "sql-indent-20090325.2254/" "org-fstree-20090723.819/" "list-utils-20140508.1341/" "mwe-log-commands-20100703.541/" "ag-20150105.1314/" "pyvenv-20150110.421/" "csv-nav-20130407.1820/" "epl-20140823.609/" "magit-gh-pulls-20141216.919/" "ess-R-object-popup-20130302.336/" "auctex-11.88.2/" "auto-compile-20150112.1608/" "php-mode-20150203.840/" "names-20150125.552/" "whole-line-or-region-20110901.130/" "ctable-20140304.1659/" "../" "./")
+
+ ("/home/ly/.local/lib/python3.4/site-packages/lxml/html/" (21716 4999 35287 521000) "builder.py" "ElementSoup.py" "formfill.py" "./" "defs.py" "_html5builder.py" "../" "__init__.py" "clean.py" "__pycache__/" "diff.py" "html5parser.py" "usedoctest.py" "soupparser.py" "_setmixin.py" "_diffcommand.py")
+
+ ("/home/ly/.pentadactyl/plugins/" (21713 39095 708370 329000) "stylish.js" "./" "../")
+
+ ("/home/ly/.emacs.d/site-lisp/org/" (21712 39058 730937 985000) "ox-taskjuggler.el" "./" "../")
+
+ ("/home/ly/.emacs.d/site-lisp/" (21711 1079 335082 157000) "./" "README" "../" "org/" "xmsi-math-symbols-input/" "sdcv/")
+
+ ("/home/ly/work/xytinc/early_comparation/" (21711 21265 581445 221000) "data/" "./" "src/" "output/" "../" ".gitignore" "竞争对手及产品列表.xlsx" ".git/")
+
+ ("/home/ly/work/xytinc/shedule/" (21710 61099 701831 781000) "./" "../")
+
+ ("/home/" (21694 29587 912249 178000) "./" "ly/" "../" "lost+found/")
+
+ ("/tmp/" (21698 5242 104884 329000) ".XIM-unix/" ".font-unix/" ".ICE-unix/" ".Test-unix/" ".X11-unix/" ".X0-lock" "fcitx-socket-:0" "emacs1000/" "kde-ly/" "fvwm.wid" "babel-4432l_Z/" "yaourt-tmp-ly/" "stardict/" "orbit-ly/" "rdtp.log" ".vbox-ly-ipc/" "../" "./")
+
+ ("/home/ly/work/xytinc/early_comparation/output/" (21696 51957 878131 85000) "projects.html" "./" "../")
+
+ ("/home/ly/.pentadactyl/" (21696 32832 311636 731000) "./" "info/" "../" "plugins/" "colors/")
+
+ ("/home/ly/documents/" (21695 30061 274901 853000) "thunderbird/" "./" "winvpn.vdi" "../" "ffprofile.ly/" "tbprofile.ly/" "members.htm" "signature/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
