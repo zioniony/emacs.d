@@ -5,9 +5,13 @@
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
 ;;(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
+(setenv "PYTHONPATH" "/home/ly/work")
 ;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
+(after-load 'python (define-key python-mode-map (kbd "C-c r") 'python-shell-send-region))
+;; (define-key python-mode-map (kbd "C-c f") 'python-shell-send-defun)
+;;(global-set-key "\C-\\" nil)
 
 ;;; load packages
 (require 'init-setupterm)
@@ -28,6 +32,12 @@
 (require-package 'ess-R-object-popup)
 (require-package 'ess-smart-underscore)
 (require 'ess-site)
+
+;;; org-mode taskjuggler
+(require 'ox-taskjuggler)
+
+;;; realgud
+(require 'realgud)
 
 ;; sdcv is dependent on showtip
 (require-package 'showtip)
@@ -77,6 +87,7 @@
 ;; (add-hook 'after-change-major-mode-hook 'fci-mode)
 (add-hook 'python-mode-hook 'fci-mode)
 (add-hook 'org-mode-hook 'fci-mode)
+(add-hook 'org-mode-hook 'yas-minor-mode)
 
 ;; Dired reuse directory buffer
 ;; (toggle-diredp-find-file-reuse-dir 1)
@@ -90,6 +101,7 @@
 (require-package 'pyvenv)
 (require-package 'highlight-indentation)
 (elpy-enable)
+(elpy-use-ipython)
 
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
@@ -120,9 +132,20 @@
  '(sql-postgres-options '("-P" "pager=off"))
  ;; set shell used by multi-term
  '(multi-term-program "/bin/zsh")
- ;; ess pdflatex
+ '(org-taskjuggler-process-command "tj3 --no-color --output-dir %o %f")
+ '(org-taskjuggler-reports-directory "output")
+ ;; python
+ '(python-shell-interpreter-args "-i")
+ '(python-shell-interpreter-interactive-arg "-i")
+;'(python-shell-interpreter-args "-i --gui=qt4")
+;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
+ ;; ess latex
+ '(TeX-engine (quote xetex))
  '(ess-swv-pdflatex-commands '("xelatex"))
+ '(gud-pdb-command-name "python -m pdb")
  '(ess-keep-dump-files nil)
+ '(ess-ask-for-ess-directory nil)
+ '(ess-swv-processor (quote knitr))
  ;; sdcv timeout
  '(showtip-timeout 60)
  )
@@ -198,6 +221,11 @@
       (write-file (concat "/sudo:root@localhost:" (ido-read-file-name "File:")))
     (write-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
+(defun display-ansi-colors ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (ansi-color-apply-on-region (point-min) (point-max))))
+
 (defun ly/proxy ()
   "set/unset proxy"
   (interactive)
@@ -218,10 +246,17 @@
               ("https" . "127.0.0.1:8080")))
       (message "set proxy to http!"))))
 
-(defun display-ansi-colors ()
-  (interactive)
-  (let ((inhibit-read-only t))
-    (ansi-color-apply-on-region (point-min) (point-max))))
+
+(defun ly/unittest (&optional pattern)
+  "Make unittest comfortable."
+  (interactive "sWhat do you want to test?")
+  (let ((delimeter (if (string= pattern "") nil ".")) )
+    (shell-command (concat "python -m unittest "
+                           (file-name-sans-extension
+                            (file-name-nondirectory buffer-file-name))
+                           delimeter
+                           pattern)))
+  )
 
 ;; http://emacs.stackexchange.com/questions/2206/i-want-to-have-the-kbd-tags-for-my-blog-written-in-org-mode/2208#2208
 (defun ly/insert-key (key)
