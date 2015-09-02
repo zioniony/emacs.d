@@ -103,13 +103,13 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/ly/work/xytinc/utils/" (21990 41819 889245 802000) "sendmail.pyc" "#exchangerate.py#" "urlget.pyc" "./" "__init__.pyc" "dbconn.pyc" "../" "__init__.py" "sendmail.py" "urlget.py" "exchangerate.py" "dbconn.py")
+
  ("/home/ly/work/xytinc/chukou1/" (21989 26336 832438 426000) "apiwrapper.py" "secex-2PG.xls" "test.php" "tmp/" "test.py" "ckyapi.py" "prodex-NYE.xls" "cfg/" "direx-NYE.xls" "./" "direx-EGK.xls" "__init__.pyc" "invex-NYE.xls" "invex-EGK.xls" "parterner.pyc" "../" "__init__.py" "freight_allot.py" "#presuretest.py#" "fetchdata.py" "prodex-2PG.xls" "prodex-EGK.xls" "apiwrapper.pyc" "parterner.py" "conf/" "presuretest.py" "secex-EGK.xls" "secex-NYE.xls" "invex-2PG.xls" "freight_allot.pyc" "direx-2PG.xls" "dfsfc.pkl")
 
  ("/home/ly/work/xytinc/schedule/" (21989 23348 882465 346000) "./" "output/" "../" "test/" ".~lock.技术部20150302项目进度状态汇报-2.pptx#" "schedule.tjp")
 
  ("/home/ly/work/xytinc/chukou1/cfg/" (21987 64061 595806 258000) "config.xml" "./" "../")
-
- ("/home/ly/work/xytinc/utils/" (21988 63475 602694 274000) "sendmail.pyc" "#exchangerate.py#" "urlget.pyc" "./" "__init__.pyc" "dbconn.pyc" "../" "__init__.py" "sendmail.py" "urlget.py" "exchangerate.py" "dbconn.py")
 
  ("/home/ly/" (21989 25052 142450 0) ".gstreamer-0.10/" ".csv" ".purple/" ".macromedia/" ".psql_history" ".texlive/" "bin/" ".links/" ".xmind/" "tmp/" ".pgpass" ".gnome2/" ".emacs.d/" ".gitconfig" ".subversion/" ".nvidia-settings-rc" ".odbc.ini" ".viminfo" ".zshrc" "./" ".mozilla/" ".terminfo/" ".python_history" ".projectlibre/" ".cache/" "public/" ".zshrc.zni" ".pgadmin3" "pgadmin.log" ".Xauthority" ".xinitrc" ".wireshark/" ".lesshst" ".zcompdump" ".ganttproject" ".config/" ".zshrc_0609_10.08" ".vimrc" "R/" ".idlerc/" ".mysql_history" ".texlive2010/" "../" ".pgadmin_histoqueries" ".fvwm/" "downloads/" ".zshrc_0608_10.35" ".vim/" ".stalonetrayrc" ".kde4.backup/" ".zshrc_6.7_23.19" ".gnome/" ".java/" ".pylint.d/" ".gmrun_history" ".gnome2_private/" "snapshot/" ".xsession-errors" ".zshhistory" ".db.py_sqlebstorage" ".conkyrc" ".sdcv_history" "org/" "Downloads/" "work/" ".pki/" ".weechat/" ".ganttproject.d/" ".thumbnails/" ".theano/" ".gnupg/" ".pentadactylrc" ".qws/" ".freemind/" ".erlang.cookie" ".mysql/" ".oh-my-zsh/" ".R/" "temp/" "documents/" ".transcmdline/" ".Rprofile" ".thunderbird/" ".tencent/" ".pentadactyl/" ".gimp-2.8/" ".histfile" ".gitignore" ".VBoxVMs/" ".zshrc.my" ".bash_history" ".xmodmaprc" ".nvsetting" ".local/" ".fehbg" ".ssh/" ".dbus/" ".stardict/" ".gem/" ".ipython/" ".kde4/" ".sunpinyin/" ".viminfo.back" "setups/" ".zsh/" ".my.cnf" ".Xresources" ".adobe/" "Desktop/" ".dia/" "dumps/")
 
