@@ -163,7 +163,7 @@
         (crawl (sql-product 'postgres)
                (sql-port 5432)
                (sql-server "58.64.197.105")
-               (sql-user "postgres")
+               (sql-user "xyt_dm")
                (sql-database "xytinc"))
         (ebaytools3 (sql-product 'mysql)
                     (sql-port 3306)
