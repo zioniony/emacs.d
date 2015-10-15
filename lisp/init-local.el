@@ -99,10 +99,11 @@
 
 (require-package 'elpy)
 (require-package 'pyvenv)
+;; (add-hook 'python-mode-hook (pyvenv-workon "py3"))
 (require-package 'highlight-indentation)
 (elpy-enable)
 (elpy-use-ipython)
-
+(pyvenv-workon "py3.5")
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
 ;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
