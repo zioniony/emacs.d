@@ -44,11 +44,11 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/ly/work/xytinc/ebay/"
  "/home/ly/work/xytinc/customers/"
  "/home/ly/work/xytinc/finacial/"
  "/home/ly/work/xytinc/omsthreadpool/"
  "/home/ly/work/xytinc/pyserver/"
- "/home/ly/work/xytinc/ebay/"
  "/home/ly/tmp/statsmodels/"
  "/home/ly/work/xytinc/chukou1/conf/"
  "/home/ly/work/xytinc/pyserver/scgisrv/"
@@ -98,6 +98,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "eBayTools2.sql"
  "expressorders.py"
  "main.py"
  "tornadoserv.py"
@@ -107,34 +108,39 @@
  "config.xml"
  "index.html"
  "dsl.ptl"
- "storage.ptl"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/ly/tmp/" (22047 7776 930241 185000) "mysql.el" "kc.xls" "../" "./")
+ ("/home/ly/" (22048 42523 454567 856000) ".gstreamer-0.10/" ".csv" ".purple/" ".macromedia/" ".psql_history" ".texlive/" "bin/" ".jupyter/" ".links/" ".xmind/" "tmp/" ".pgpass" ".gnome2/" ".emacs.d/" ".gitconfig" ".subversion/" ".nvidia-settings-rc" ".odbc.ini" ".viminfo" ".zshrc" "dev-netsurf/" "./" ".mozilla/" ".fltk/" ".gvfs/" ".terminfo/" ".python_history" ".projectlibre/" ".cache/" "public/" ".zshrc.zni" ".pgadmin3" "pgadmin.log" ".Xauthority" ".xinitrc" ".wireshark/" ".lesshst" ".zcompdump" ".ganttproject" ".config/" ".zshrc_0609_10.08" ".vimrc" ".virtualenvs/" "R/" ".idlerc/" ".mysql_history" ".texlive2010/" "../" ".pgadmin_histoqueries" ".fvwm/" "downloads/" ".zshrc_0608_10.35" ".vim/" ".stalonetrayrc" ".kde4.backup/" ".zshrc_6.7_23.19" ".gnome/" ".java/" ".android/" ".pylint.d/" ".gmrun_history" ".gnome2_private/" "snapshot/" ".xsession-errors" ".zshhistory" ".db.py_sqlebstorage" ".conkyrc" ".sdcv_history" "org/" "pysimplesoap" "Downloads/" "work/" ".pki/" ".weechat/" ".ganttproject.d/" ".thumbnails/" ".theano/" ".gnupg/" ".pentadactylrc" ".qws/" ".freemind/" ".erlang.cookie" ".mysql/" ".oh-my-zsh/" ".R/" "temp/" "documents/" ".transcmdline/" ".Rprofile" ".thunderbird/" ".conkyrc.backup" ".dillo/" ".tencent/" ".pentadactyl/" ".gimp-2.8/" ".histfile" ".gitignore" ".VBoxVMs/" ".zshrc.my" ".bash_history" ".xmodmaprc" ".nvsetting" ".local/" ".fehbg" ".ssh/" ".dbus/" ".stardict/" ".gem/" ".ipython/" ".kde4/" ".sunpinyin/" ".viminfo.back" "setups/" ".zsh/" ".my.cnf" ".Xresources" ".adobe/" "Desktop/" ".dia/" "dumps/")
 
- ("/home/ly/" (22047 16535 425514 483000) ".gstreamer-0.10/" ".csv" ".purple/" ".macromedia/" ".psql_history" ".texlive/" "bin/" ".jupyter/" ".links/" ".xmind/" "tmp/" ".pgpass" ".gnome2/" ".emacs.d/" ".gitconfig" ".subversion/" ".nvidia-settings-rc" ".odbc.ini" ".viminfo" ".zshrc" "dev-netsurf/" "./" ".mozilla/" ".fltk/" ".gvfs/" ".terminfo/" ".python_history" ".projectlibre/" ".cache/" "public/" ".zshrc.zni" ".pgadmin3" "pgadmin.log" ".Xauthority" ".xinitrc" ".wireshark/" ".lesshst" ".zcompdump" ".ganttproject" ".config/" ".zshrc_0609_10.08" ".vimrc" ".virtualenvs/" "R/" ".idlerc/" ".mysql_history" ".texlive2010/" "../" ".pgadmin_histoqueries" ".fvwm/" "downloads/" ".zshrc_0608_10.35" ".vim/" ".stalonetrayrc" ".kde4.backup/" ".zshrc_6.7_23.19" ".gnome/" ".java/" ".android/" ".pylint.d/" ".gmrun_history" ".gnome2_private/" "snapshot/" ".xsession-errors" ".zshhistory" ".db.py_sqlebstorage" ".conkyrc" ".sdcv_history" "org/" "pysimplesoap" "Downloads/" "work/" ".pki/" ".weechat/" ".ganttproject.d/" ".thumbnails/" ".theano/" ".gnupg/" ".pentadactylrc" ".qws/" ".freemind/" ".erlang.cookie" ".mysql/" ".oh-my-zsh/" ".R/" "temp/" "documents/" ".transcmdline/" ".Rprofile" ".thunderbird/" ".conkyrc.backup" ".dillo/" ".tencent/" ".pentadactyl/" ".gimp-2.8/" ".histfile" ".gitignore" ".VBoxVMs/" ".zshrc.my" ".bash_history" ".xmodmaprc" ".nvsetting" ".local/" ".fehbg" ".ssh/" ".dbus/" ".stardict/" ".gem/" ".ipython/" ".kde4/" ".sunpinyin/" ".viminfo.back" "setups/" ".zsh/" ".my.cnf" ".Xresources" ".adobe/" "Desktop/" ".dia/" "dumps/")
+ ("/home/ly/work/xytinc/sfc/" (22044 39429 690931 49000) "sfcapi.py" "./" "testdate.py" "__init__.pyc" "sfcapi.pyc" "../" "__init__.py" "#testdate.py#" "__pycache__/")
 
- ("/home/ly/work/xytinc/chukou1/" (22047 6276 180254 706000) "apiwrapper.py" "test.php" "tmp/" "test.py" "ckyapi.py" "mtoc.py" "cfg/" "./" "__init__.pyc" "parterner.pyc" "../" "__init__.py" "freight_allot.py" "#presuretest.py#" "fetchdata.py" "__pycache__/" "apiwrapper.pyc" "parterner.py" "conf/" "presuretest.py" "ck1-api-v3-add-未公开接口-20150116.html" "freight_allot.pyc" "dfsfc.pkl")
+ ("/home/ly/.emacs.d/lisp/" (22047 21755 148800 788000) "init-compat.el" "init-osx-keys.el" "init-vc.el" "init-utils.el" "init-html.el" "init-csv.el" "init-site-lisp.el" "init-paredit.el" "init-benchmarking.el" "init-windows.el" "init-ido.el" "./" "init-crontab.el" "init-fonts.el" "init-css.el" "init-gui-frames.el" "init-dash.el" "init-rails.el" "init-php.el" "init-markdown.el" "init-common-lisp.el" "init-slime.el" "init-haml.el" "init-clojure-cider.el" "init-haskell.el" "init-nxml.el" "init-setupterm.el" "init-isearch.el" "init-elpa.el" ".dir-locals.el" "init-locales.el" "init-git.el" "../" "init-frame-hooks.el" "init-macros.el" "init-flycheck.el" "init-editing-utils.el" "init-erlang.el" "init-lisp.el" "init-textile.el" "init-hippie-expand.el" "init-local.el" "init-recentf.el" "init-sessions.el" "init-sqlpasswd.el.gpg" "init-elm.el" "init-xterm.el" "init-auto-complete.el" "init-uniquify.el" "init-dired.el" "init-exec-path.el" "init-javascript.el" "init-misc.el" "init-flyspell.el" "init-compile.el" "init-python-mode.el" "init-darcs.el" "init-ibuffer.el" "init-org.el" "init-sql.el" "init-themes.el" "init-ruby-mode.el" "init-grep.el" "init-ledger.el" "init-github.el" "init-clojure.el" "init-spelling.el" "init-mmm.el")
 
- ("/home/ly/work/xytinc/customers/" (22044 36208 90960 75000) "expressorders.py" "balence.py" "./" "skurecentselling.py" "#skurecentselling.py#" "../" "__init__.py" "__pycache__/")
+ ("/tmp/" (22048 44371 477873 395000) ".X11-unix/" ".ICE-unix/" ".XIM-unix/" ".font-unix/" ".Test-unix/" "systemd-private-04eb2f63b6db482b8b1cfe951c84e9af-postgresql.service-Pzut66/" ".X0-lock" "fcitx-socket-:0" "emacs1000/" "babel-2912XmE/" "fvwm.wid" "skuselling-20151016085830.xlsx" "yaourt-tmp-ly/" "头程入库信息接口-v2.docx" "CK1-Partner-Api-Saas-20150820.doc" "CK1-Partner-Api-Saas-20150820-1.doc" "头程入库信息接口-v2-1.docx" "OSL_PIPE_1000_SingleOfficeIPC_62ccead8c7c81aa5c318aa2139ea1ed3" "lut69tmf.tmp/" "CK1-Partner-Api-Saas-20150820-2.doc" "附件1：寿星公分组详情.xls" "附件2：制作果盘工具及预算.docx" "vpn_oldgw" "2015-09-11周计划/" "2015-10-10周计划/" "2015-10-16周计划/" "2015-10-16/" ".vbox-ly-ipc/" "2015-10-10/" "skuselling-20151016143620.xlsx" "directexpress-20151016084934.xlsx" "../" "./")
 
- ("/home/ly/work/xytinc/finacial/" (22044 45137 224212 959000) "#main.py#" "./" "main.py" "__init__.pyc" "finacail.org" "../" "__init__.py" "__pycache__/" "main.pyc")
+ ("/home/ly/work/xytinc/pyserver/templates/logistics/" (22043 26362 88443 928000) "./" "../" "responsepricing.html" "getpricing.html")
 
- ("/home/ly/work/xytinc/ebay/" (22044 39447 690930 885000) "localorder.py" "ebay.xls" "localorder.pyc" "survey.org" "市场调查数据-ted.docx" "sellingrank.py" "ebayapidata.py" "test.xml" "uid.txt" "seller_weekly.pyc" "rst.xml" "pkbk/" "out_V3.xlsx" "data/" "cfg/" "ebay.csv" "./" "ebayplatformfee.sql" "ebapi.py" "ebaytokenstat.pyc" "__init__.pyc" "price_check.pyc" "ebaylms/" "ghostdriver.log" "productinfo1.xlsx" "ebst.py" "tokendataextract.py" "out1.xlsx" "orderexport.sql" "getuserdetailresponse.xml" "output/" "pkl/" "account.py" "timecost.pkl" "storagemanage.pyc" "../" "getusersummaryresponse.xml" "ebayapi/" "__init__.py" "apisupervisor.py" "usersummary.py" "itemlist/" "usersummary.pyc" ".~lock.price1.xlsx#" "jsonextract.py" "apitest.py" "fdw.sql" "jsonextractsimple.py" "ebaytokenstat1.pyc" "nohup.out" "ebay_addr_threads.py" "直发订单快速导出.txt" "timecost.htm" "ebapi.pyc" "__pycache__/" "ebayschema.sql" "out_V4.xlsx" "snippet.py" "ebaytokenstat1.py" "ebay_scrape.py" "seller_weekly.py" "localorder_.py" "storagemanage.py" "productinfo.xlsx" "eBayTools2.sql" "out_V5.xlsx" "需求描述.org" "out.sql" "invalidsku.xlsx" "ebayapidata.pyc" "expr.pkl" "output.xlsx" "#ebapi.py#" "out_V2.xlsx" "pel.pdpk" "scig_test.py" "cache_0.htm" "tst.py" "ttt.csv" "ebay_addr.py" "queryback.txt" "python-ebay/" "report.sql" "price_check.py")
+ ("/home/ly/work/xytinc/utils/" (22044 29776 720474 469000) "sendmail.pyc" "urlget.pyc" "./" "__init__.pyc" "dbconn.pyc" "../" "__init__.py" "#urlget.py#" "sendmail.py" "__pycache__/" "urlget.py" "exchangerate.py" "dbconn.py")
 
- ("/home/ly/work/xytinc/omsthreadpool/" (22044 36175 80960 372000) "#main.py#" "multitheading.py" "./" "main.py" "__init__.pyc" "../" "__init__.py" "__pycache__/" "server.py" ".#main.py" "server.pyc" "scgifactory.py" "main.pyc")
+ ("/home/ly/work/xytinc/chukou1/" (22048 35225 751344 279000) "apiwrapper.py" "test.php" "tmp/" "test.py" "ckyapi.py" "mtoc.py" "cfg/" "./" "__init__.pyc" "parterner.pyc" "../" "__init__.py" "freight_allot.py" "#presuretest.py#" "fetchdata.py" "__pycache__/" "apiwrapper.pyc" "parterner.py" "conf/" "presuretest.py" "ck1-api-v3-add-未公开接口-20150116.html" "freight_allot.pyc" "dfsfc.pkl")
 
- ("/home/ly/work/xytinc/pyserver/" (22044 32374 830451 62000) "flasksimple.py" "ufinance-EGK-2015-09-01.xls" "scgisrv/" "prodex-A1M.xls" "secex-GZY.xls" "tmp/" "secex-A1M.xls" "test.py" "ebay账号.txt" "data/" "cfg/" "flaskserv.py" "demofactory.pyc" "./" "prodex-2GV.xls" "direx-EGK.xls" "uorder-EGK-2015-09-01.xls" "main.py" "direx-A1M.xls" "__init__.pyc" "demo.conf" "ghostdriver.log" "main1.pyc" "output/" "invex-GZY.xls" "invex-A1M.xls" "srvxyt.py" "scgiserver.py" "invex-EGK.xls" "index.html" "../" "scgifactory.pyc" "__init__.py" "direx-2GV.xls" "scgixyt/" "xmlrpc_server.py" "pricestd.csv" "prodex-EGK.xls" "__pycache__/" "direx-GZY.xls" "demofactory.py" "scgioms/" "scgi_server.py" "prodex-GZY.xls" "secex-2GV.xls" "srvxyt.pyc" "demo_scgi.sh" "static/" "secex-EGK.xls" "demo/" "invex-2GV.xls" "tornadoserv.py" "scgifactory.py" "main.pyc" "templates/")
+ ("/home/ly/tmp/" (22048 27287 996930 879000) "llvm-3.6.2-4-x86_64.pkg.tar.xz" "llvm-libs-3.6.2-4-x86_64.pkg.tar.xz" "../" "./")
 
- ("/home/ly/.emacs.d/lisp/" (22038 3450 867777 188000) "init-compat.el" "init-osx-keys.el" "init-vc.el" "init-utils.el" "init-html.el" "init-csv.el" "init-site-lisp.el" "init-paredit.el" "init-benchmarking.el" "init-windows.el" "init-ido.el" "./" "init-crontab.el" "init-fonts.el" "init-css.el" "init-gui-frames.el" "init-dash.el" "init-rails.el" "init-php.el" "init-markdown.el" "init-common-lisp.el" "init-slime.el" "init-haml.el" "init-clojure-cider.el" "init-haskell.el" "init-nxml.el" "init-setupterm.el" "init-isearch.el" "init-elpa.el" ".dir-locals.el" "init-locales.el" "init-git.el" "../" "init-frame-hooks.el" "init-macros.el" "init-flycheck.el" "init-editing-utils.el" "init-erlang.el" "init-lisp.el" "init-textile.el" "init-hippie-expand.el" "init-local.el" "init-recentf.el" "init-sessions.el" "init-sqlpasswd.el.gpg" "init-xterm.el" "init-auto-complete.el" "init-uniquify.el" "init-dired.el" "init-exec-path.el" "init-javascript.el" "init-misc.el" "init-flyspell.el" "init-compile.el" "init-python-mode.el" "init-darcs.el" "init-ibuffer.el" "init-org.el" "init-sql.el" "init-themes.el" "init-ruby-mode.el" "init-grep.el" "init-ledger.el" "init-github.el" "init-clojure.el" "init-spelling.el" "init-mmm.el" "init-proxies.el")
+ ("/home/ly/work/xytinc/ebay/" (22047 13442 228875 685000) "localorder.py" "ebay.xls" "localorder.pyc" "survey.org" "市场调查数据-ted.docx" "sellingrank.py" "ebayapidata.py" "test.xml" "uid.txt" "seller_weekly.pyc" "rst.xml" "pkbk/" "out_V3.xlsx" "data/" "cfg/" "ebay.csv" "./" "ebayplatformfee.sql" "ebapi.py" "ebaytokenstat.pyc" "__init__.pyc" "price_check.pyc" "ebaylms/" "ghostdriver.log" "productinfo1.xlsx" "ebst.py" "tokendataextract.py" "out1.xlsx" "orderexport.sql" "getuserdetailresponse.xml" "output/" "pkl/" "account.py" "timecost.pkl" "storagemanage.pyc" "../" "getusersummaryresponse.xml" "ebayapi/" "__init__.py" "apisupervisor.py" "usersummary.py" "itemlist/" "usersummary.pyc" ".~lock.price1.xlsx#" "jsonextract.py" "apitest.py" "fdw.sql" "jsonextractsimple.py" "ebaytokenstat1.pyc" "nohup.out" "ebay_addr_threads.py" "直发订单快速导出.txt" "timecost.htm" "ebapi.pyc" "__pycache__/" "ebayschema.sql" "out_V4.xlsx" "snippet.py" "ebaytokenstat1.py" "ebay_scrape.py" "seller_weekly.py" "localorder_.py" "storagemanage.py" "productinfo.xlsx" "eBayTools2.sql" "out_V5.xlsx" "需求描述.org" "out.sql" "invalidsku.xlsx" "ebayapidata.pyc" "expr.pkl" "output.xlsx" "out_V2.xlsx" "pel.pdpk" "scig_test.py" "cache_0.htm" "tst.py" "ttt.csv" "ebay_addr.py" "queryback.txt" "python-ebay/" "report.sql" "price_check.py")
+
+ ("/home/ly/work/xytinc/pyserver/" (22047 6091 780256 368000) "flasksimple.py" "ufinance-EGK-2015-09-01.xls" "scgisrv/" "prodex-A1M.xls" "uorder-2015-10-01.xlsx" "secex-GZY.xls" "tmp/" "secex-A1M.xls" "test.py" "ebay账号.txt" "data/" "cfg/" "flaskserv.py" "demofactory.pyc" "./" "prodex-2GV.xls" "direx-EGK.xls" "uorder-EGK-2015-09-01.xls" "main.py" "direx-A1M.xls" "__init__.pyc" "demo.conf" "ghostdriver.log" "main1.pyc" "output/" "invex-GZY.xls" "invex-A1M.xls" "srvxyt.py" "scgiserver.py" "invex-EGK.xls" "index.html" "../" "scgifactory.pyc" "__init__.py" "direx-2GV.xls" "scgixyt/" "xmlrpc_server.py" "pricestd.csv" "prodex-EGK.xls" "__pycache__/" "direx-GZY.xls" "demofactory.py" "scgioms/" "scgi_server.py" "prodex-GZY.xls" "ufinance-2015-10-01.xlsx" "secex-2GV.xls" "srvxyt.pyc" "demo_scgi.sh" "static/" "secex-EGK.xls" "demo/" "invex-2GV.xls" "tornadoserv.py" "scgifactory.py" "main.pyc" "templates/")
+
+ ("/home/ly/work/xytinc/omsthreadpool/" (22044 37200 140951 137000) "#main.py#" "multitheading.py" "./" "main.py" "__init__.pyc" "../" "__init__.py" "__pycache__/" "server.py" "server.pyc" "scgifactory.py" "main.pyc")
+
+ ("/home/ly/work/xytinc/finacial/" (22047 2392 666956 361000) "#main.py#" "./" "main.py" "__init__.pyc" "finacail.org" "../" "__init__.py" "__pycache__/" "main.pyc")
+
+ ("/home/ly/work/xytinc/customers/" (22048 18848 930391 136000) "expressorders.py" "balence.py" "./" "skurecentselling.py" "#skurecentselling.py#" "../" "__init__.py" "__pycache__/")
 
  ("/home/ly/.virtualenvs/py3/lib/python3.4/site-packages/flask/" (22039 5858 473605 407000) "json.py" "testing.py" "wrappers.py" "views.py" "./" "signals.py" "logging.py" "_compat.py" "exthook.py" "../" "__init__.py" "helpers.py" "debughelpers.py" "config.py" "__pycache__/" "testsuite/" "blueprints.py" "globals.py" "ctx.py" "sessions.py" "templating.py" "module.py" "ext/" "app.py")
 
  ("/home/ly/.virtualenvs/py3/lib/python3.4/site-packages/werkzeug/" (22039 5858 336938 741000) "contrib/" "debug/" "wrappers.py" "test.py" "security.py" "utils.py" "./" "datastructures.py" "_compat.py" "wsgi.py" "../" "__init__.py" "_internal.py" "__pycache__/" "useragents.py" "exceptions.py" "local.py" "serving.py" "urls.py" "_reloader.py" "posixemulation.py" "script.py" "http.py" "routing.py" "testapp.py" "formparser.py")
-
- ("/tmp/" (22043 1487 433769 466000) ".X11-unix/" ".ICE-unix/" ".XIM-unix/" ".font-unix/" ".Test-unix/" "systemd-private-92d8d163cac7415bbce1c8a5d8cc3e3a-postgresql.service-O2PQUD/" ".X0-lock" "fcitx-socket-:0" "MozillaMailnews/" "15年市场部最新调整销售架构.xmind" "hsperfdata_ly/" "20151009销售汇总.xlsx" "OSL_PIPE_1000_SingleOfficeIPC_62ccead8c7c81aa5c318aa2139ea1ed3" "lun85rjl.tmp/" "babel-4304eTw/" "emacs1000/" "fvwm.wid" "../" "./")
 
  ("/home/ly/work/xytinc/pyserver/templates/ebay/" (22038 12780 280801 407000) "./" "getdirectexpress.html" "../" "getskuselling.html")
 
@@ -154,15 +160,9 @@
 
  ("/home/ly/work/xytinc/ramqp/" (22019 38547 729683 581000) "auths.py" "send.py" "test.py" "workerdlx.py" "pooltest.py" "publisherasync.py" "workerdb.py" "./" "__init__.pyc" "getdata.py" "../" "__init__.py" "publisherasync.pyc" "__pycache__/" "server.py" "receive_dl.py" "delayp.py" "consumerasync.py" "logging.conf" "workers.py" "#workers.py#" "#consumerasync.py#" "worker.py" "receiver.py" "logcfg.yaml" "server.pyc" "dbworker.py")
 
- ("/home/ly/work/xytinc/pyserver/templates/logistics/" (22024 47053 436826 417000) "./" "../" "responsepricing.html" "getpricing.html")
-
- ("/home/ly/work/xytinc/utils/" (22019 24746 246765 915000) "sendmail.pyc" "urlget.pyc" "./" "__init__.pyc" "dbconn.pyc" "../" "__init__.py" "#urlget.py#" "sendmail.py" "__pycache__/" "urlget.py" "exchangerate.py" "dbconn.py")
-
  ("/home/ly/work/xytinc/misc/" (22019 19507 470257 27000) "./" "../" "__init__.py" "logisticsprice.py" "__pycache__/")
 
  ("/home/ly/work/xytinc/pyserver/templates/" (22024 47039 243493 209000) "ebay/" "./" "logistics/" "../")
-
- ("/home/ly/work/xytinc/sfc/" (22019 19507 470257 27000) "sfcapi.py" "./" "testdate.py" "__init__.pyc" "sfcapi.pyc" "../" "__init__.py" "#testdate.py#" "__pycache__/")
 
  ("/home/ly/work/xytinc/ebay/ebaylms/" (22017 11099 999349 969000) "examples/" "./" "sb_credentials.json.example" "__init__.pyc" "credentials.json.example" "lmslib.py" "README" "../" "__init__.py" "sb_credentials.json.1" "credentials.json" "lmslib.pyc" "LICENSE.txt" "__pycache__/" "sb_credentials.json" "sb_credentials.json.2")
 
