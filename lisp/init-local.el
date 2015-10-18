@@ -99,12 +99,12 @@
 
 (require-package 'elpy)
 (require-package 'pyvenv)
+;; (add-hook 'python-mode-hook (pyvenv-workon "py3"))
 (require-package 'highlight-indentation)
 (pyvenv-workon "py3.4")
 (elpy-enable)
 (elpy-use-ipython)
-
-
+(pyvenv-workon "py3.5")
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
 ;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
@@ -257,9 +257,47 @@
         ("l" "Link" plain (file (concat org-directory "/links.org"))
          "- %?\n %x\n")))
 ;; active Babel languages
+;;; http://doc.norang.ca/org-mode.html#OrgBabel
+(setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")
+(setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
+
+(add-hook 'org-babel-after-execute-hook 'bh/display-inline-images 'append)
+
+;; Make babel results blocks lowercase
+(setq org-babel-results-keyword "results")
+
+(defun bh/display-inline-images ()
+  (condition-case nil
+      (org-display-inline-images)
+    (error nil)))
+
 (org-babel-do-load-languages
- 'org-babel-load-languages
- '((sql . t) (python . t) (R .t)))
+ (quote org-babel-load-languages)
+ (quote ((emacs-lisp . t)
+         (dot . t)
+         (ditaa . t)
+         (R . t)
+         (python . t)
+         (sql . t)
+         (ruby . t)
+         (gnuplot . t)
+         (clojure . t)
+         (sh . t)
+         (ledger . t)
+         (org . t)
+         (plantuml . t)
+         (latex . t))))
+
+;; Do not prompt to confirm evaluation
+;; This may be dangerous - make sure you understand the consequences
+;; of setting this -- see the docstring for details
+(setq org-confirm-babel-evaluate nil)
+
+;; Use fundamental mode when editing plantuml blocks with C-c '
+(add-to-list 'org-src-lang-modes (quote ("plantuml" . fundamental)))
+;; Don't enable this because it breaks access to emacs from my Android phone
+(setq org-startup-with-inline-images nil)
+
 
 
 ;;; bind key dwim
