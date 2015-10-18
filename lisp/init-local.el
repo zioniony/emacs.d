@@ -100,8 +100,10 @@
 (require-package 'elpy)
 (require-package 'pyvenv)
 (require-package 'highlight-indentation)
+(pyvenv-workon "py3.4")
 (elpy-enable)
 (elpy-use-ipython)
+
 
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
