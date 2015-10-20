@@ -2,6 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/ly/.virtualenvs/py2/lib/python2.7/site-packages/" . "xlrd/")
+ ("/home/ly/.virtualenvs/py2/lib/python2.7/" . "site-packages/")
+ ("/home/ly/.virtualenvs/py2/lib/" . "python2.7/")
+ ("/home/ly/.virtualenvs/py2/" . "lib/")
+ ("/home/ly/.virtualenvs/py3.5/lib/python3.5/" . "site-packages/")
+ ("/home/ly/.virtualenvs/py3.5/lib/" . "python3.5/")
  ("/home/ly/tmp/templates/" . "ebay/")
  ("/home/ly/work/xytinc/chukou1/" . "conf/")
  ("/home/ly/work/xytinc/pyserver/templates/" . "ebay/")
@@ -36,7 +42,7 @@
  ("/home/ly/work/xytinc/webgrap/" . "src/")
  ("/home/ly/" . ".virtualenvs/")
  ("/home/ly/work/xytinc/early_comparation/" . "src/")
- ("/home/ly/work/xytinc/" . "customers/")
+ ("/home/ly/work/xytinc/" . "pyserver/")
  ("/home/ly/work/" . "xytinc/")
  ("/home/ly/.pentadactyl/" . "plugins/")
  ("/home/ly/documents/" . "signature/")
@@ -44,11 +50,16 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/ly/.emacs.d/lisp/"
+ "/home/ly/work/xytinc/pyserver/"
+ "/home/ly/.virtualenvs/py3.5/lib/python3.5/site-packages/xlrd/"
+ "/home/ly/.virtualenvs/py2/lib/python2.7/site-packages/xlrd/"
+ "/tmp/"
+ "/home/ly/work/xytinc/"
  "/home/ly/work/xytinc/ebay/"
  "/home/ly/work/xytinc/customers/"
  "/home/ly/work/xytinc/finacial/"
  "/home/ly/work/xytinc/omsthreadpool/"
- "/home/ly/work/xytinc/pyserver/"
  "/home/ly/tmp/statsmodels/"
  "/home/ly/work/xytinc/chukou1/conf/"
  "/home/ly/work/xytinc/pyserver/scgisrv/"
@@ -58,15 +69,12 @@
  "/home/ly/work/xytinc/chukou1/"
  "/home/ly/work/xytinc/pyserver/templates/ebay/"
  "/home/ly/work/xytinc/utils/"
- "/home/ly/work/xytinc/"
  "/home/ly/work/xytinc/ebay/cfg/"
  "/home/ly/work/xytinc/pyserver/templates/logistics/"
- "/tmp/"
  "/home/ly/.virtualenvs/py3/lib/python3.4/site-packages/werkzeug/"
  "/home/ly/.virtualenvs/py3/lib/python3.4/site-packages/flask/"
  "/tmp/rinse/rinse/tests/"
  "/home/ly/work/xytinc/chukou1/cfg/"
- "/home/ly/.emacs.d/lisp/"
  "/home/ly/.emacs.d/elpa/pyvenv-20150822.739/"
  "/home/ly/work/xytinc/schedule/"
  "/home/ly/work/xytinc/ramqp/"
@@ -92,51 +100,73 @@
  "/home/ly/.local/lib/python2.7/site-packages/scgi/"
  "/home/ly/work/xytinc/webgrap/"
  "/home/ly/work/xytinc/ebay/ebaylms/"
- "/home/ly/work/xytinc/ebay/ebaylms/examples/"
- "/home/ly/work/xytinc/ebay/eBay-LMS-API/examples/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "init-local.el"
+ "main.py"
+ "scgifactory.py"
+ "scgi_server.py"
+ "book.py"
+ "__init__.py"
+ "rst.htm"
+ "seller_weekly.py"
  "eBayTools2.sql"
  "expressorders.py"
- "main.py"
- "tornadoserv.py"
- "flaskserv.py"
- "seller_weekly.py"
- "setup.py"
- "config.xml"
- "index.html"
- "dsl.ptl"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/ly/" (22048 42523 454567 856000) ".gstreamer-0.10/" ".csv" ".purple/" ".macromedia/" ".psql_history" ".texlive/" "bin/" ".jupyter/" ".links/" ".xmind/" "tmp/" ".pgpass" ".gnome2/" ".emacs.d/" ".gitconfig" ".subversion/" ".nvidia-settings-rc" ".odbc.ini" ".viminfo" ".zshrc" "dev-netsurf/" "./" ".mozilla/" ".fltk/" ".gvfs/" ".terminfo/" ".python_history" ".projectlibre/" ".cache/" "public/" ".zshrc.zni" ".pgadmin3" "pgadmin.log" ".Xauthority" ".xinitrc" ".wireshark/" ".lesshst" ".zcompdump" ".ganttproject" ".config/" ".zshrc_0609_10.08" ".vimrc" ".virtualenvs/" "R/" ".idlerc/" ".mysql_history" ".texlive2010/" "../" ".pgadmin_histoqueries" ".fvwm/" "downloads/" ".zshrc_0608_10.35" ".vim/" ".stalonetrayrc" ".kde4.backup/" ".zshrc_6.7_23.19" ".gnome/" ".java/" ".android/" ".pylint.d/" ".gmrun_history" ".gnome2_private/" "snapshot/" ".xsession-errors" ".zshhistory" ".db.py_sqlebstorage" ".conkyrc" ".sdcv_history" "org/" "pysimplesoap" "Downloads/" "work/" ".pki/" ".weechat/" ".ganttproject.d/" ".thumbnails/" ".theano/" ".gnupg/" ".pentadactylrc" ".qws/" ".freemind/" ".erlang.cookie" ".mysql/" ".oh-my-zsh/" ".R/" "temp/" "documents/" ".transcmdline/" ".Rprofile" ".thunderbird/" ".conkyrc.backup" ".dillo/" ".tencent/" ".pentadactyl/" ".gimp-2.8/" ".histfile" ".gitignore" ".VBoxVMs/" ".zshrc.my" ".bash_history" ".xmodmaprc" ".nvsetting" ".local/" ".fehbg" ".ssh/" ".dbus/" ".stardict/" ".gem/" ".ipython/" ".kde4/" ".sunpinyin/" ".viminfo.back" "setups/" ".zsh/" ".my.cnf" ".Xresources" ".adobe/" "Desktop/" ".dia/" "dumps/")
+ ("/home/ly/.emacs.d/lisp/" (22053 46280 20524 80000) "init-compat.el" "init-osx-keys.el" "init-vc.el" "init-utils.el" "init-html.el" "init-csv.el" "init-site-lisp.el" "init-paredit.el" "init-benchmarking.el" "init-windows.el" "init-ido.el" "./" "init-crontab.el" "init-fonts.el" "init-css.el" "init-gui-frames.el" "init-dash.el" "init-rails.el" "init-php.el" "init-markdown.el" "init-common-lisp.el" "init-slime.el" "init-haml.el" "init-clojure-cider.el" "init-haskell.el" "init-nxml.el" "init-setupterm.el" "init-isearch.el" "init-elpa.el" ".dir-locals.el" "init-locales.el" "init-git.el" "../" "init-frame-hooks.el" "init-macros.el" "init-flycheck.el" "init-editing-utils.el" "init-erlang.el" "init-lisp.el" "init-textile.el" "init-hippie-expand.el" "init-local.el" "init-recentf.el" "init-sessions.el" "init-sqlpasswd.el.gpg" "init-elm.el" "init-xterm.el" "init-auto-complete.el" "init-uniquify.el" "init-dired.el" "init-exec-path.el" "init-javascript.el" "init-misc.el" "init-flyspell.el" "init-compile.el" "init-python-mode.el" "init-darcs.el" "init-ibuffer.el" "init-org.el" "init-sql.el" "init-themes.el" "init-ruby-mode.el" "init-grep.el" "init-ledger.el" "init-github.el" "init-clojure.el" "init-spelling.el" "init-mmm.el")
+
+ ("/home/ly/work/xytinc/pyserver/" (22053 41719 253871 2000) "flasksimple.py" "ufinance-EGK-2015-09-01.xls" "scgisrv/" "prodex-A1M.xls" "uorder-2015-10-01.xlsx" "secex-GZY.xls" "tmp/" "secex-A1M.xls" "test.py" "ebay账号.txt" "data/" "cfg/" "flaskserv.py" "demofactory.pyc" "./" "prodex-2GV.xls" "direx-EGK.xls" "uorder-EGK-2015-09-01.xls" "main.py" "direx-A1M.xls" "__init__.pyc" "demo.conf" "ghostdriver.log" "main1.pyc" "output/" "invex-GZY.xls" "invex-A1M.xls" "srvxyt.py" "scgiserver.py" "invex-EGK.xls" "index.html" "../" "scgifactory.pyc" "__init__.py" "direx-2GV.xls" "scgixyt/" "xmlrpc_server.py" "pricestd.csv" "prodex-EGK.xls" "__pycache__/" "direx-GZY.xls" "demofactory.py" "scgioms/" "scgi_server.py" "prodex-GZY.xls" "ufinance-2015-10-01.xlsx" "secex-2GV.xls" "srvxyt.pyc" "demo_scgi.sh" "static/" "secex-EGK.xls" "demo/" "invex-2GV.xls" "tornadoserv.py" "scgifactory.py" "main.pyc" "templates/")
+
+ ("/home/ly/" (22053 41685 187204 437000) ".gstreamer-0.10/" ".csv" ".purple/" ".macromedia/" ".psql_history" ".texlive/" "bin/" ".jupyter/" ".links/" ".xmind/" "tmp/" ".pgpass" ".gnome2/" ".emacs.d/" ".gitconfig" ".subversion/" ".nvidia-settings-rc" ".odbc.ini" ".viminfo" ".zshrc" "dev-netsurf/" "./" ".mozilla/" ".fltk/" ".gvfs/" ".terminfo/" ".python_history" ".projectlibre/" ".cache/" "public/" ".zshrc.zni" ".pgadmin3" "pgadmin.log" ".Xauthority" ".xinitrc" ".wireshark/" ".lesshst" ".zcompdump" ".ganttproject" ".config/" ".zshrc_0609_10.08" ".vimrc" ".virtualenvs/" "R/" ".idlerc/" ".mysql_history" ".texlive2010/" "../" ".pgadmin_histoqueries" ".fvwm/" "downloads/" ".zshrc_0608_10.35" ".vim/" ".stalonetrayrc" ".kde4.backup/" ".zshrc_6.7_23.19" ".gnome/" ".java/" ".android/" ".pylint.d/" ".gmrun_history" ".gnome2_private/" "snapshot/" ".xsession-errors" ".zshhistory" ".db.py_sqlebstorage" ".conkyrc" ".sdcv_history" "org/" "pysimplesoap" "Downloads/" "work/" ".pki/" ".weechat/" ".ganttproject.d/" ".thumbnails/" ".theano/" ".gnupg/" ".pentadactylrc" ".qws/" ".freemind/" ".erlang.cookie" ".mysql/" ".oh-my-zsh/" ".R/" "temp/" "documents/" ".transcmdline/" ".Rprofile" ".thunderbird/" ".conkyrc.backup" ".dillo/" ".tencent/" ".pentadactyl/" ".gimp-2.8/" ".histfile" ".gitignore" ".VBoxVMs/" ".zshrc.my" ".bash_history" ".xmodmaprc" ".nvsetting" ".local/" ".fehbg" ".ssh/" ".dbus/" ".stardict/" ".gem/" ".ipython/" ".kde4/" ".sunpinyin/" ".viminfo.back" "setups/" ".zsh/" ".my.cnf" ".Xresources" ".adobe/" "Desktop/" ".dia/" "dumps/")
+
+ ("/home/ly/work/xytinc/utils/" (22053 36414 870553 474000) "sendmail.pyc" "phpexcelfix.py" "urlget.pyc" "./" "__init__.pyc" "dbconn.pyc" "../" "__init__.py" "sendmail.py" "__pycache__/" "urlget.py" "exchangerate.py" "dbconn.py")
+
+ ("/home/ly/work/xytinc/chukou1/" (22053 36414 870553 474000) "apiwrapper.py" "test.php" "tmp/" "test.py" "ckyapi.py" "mtoc.py" "cfg/" "./" "__init__.pyc" "updatestorage.py" "parterner.pyc" "../" "__init__.py" "freight_allot.py" "#presuretest.py#" "fetchdata.py" "__pycache__/" "apiwrapper.pyc" "parterner.py" "conf/" "presuretest.py" "ck1-api-v3-add-未公开接口-20150116.html" "freight_allot.pyc" "dfsfc.pkl")
+
+ ("/home/ly/tmp/" (22053 41216 370539 167000) "expressorders.py" "skurecentselling.py" "../" "./")
+
+ ("/home/ly/work/xytinc/customers/" (22053 41189 83872 582000) "expressorders.py" "balence.py" "./" "skurecentselling.py" "#skurecentselling.py#" "../" "__init__.py" "__pycache__/")
+
+ ("/tmp/" (22053 41663 490537 835000) ".X11-unix/" ".ICE-unix/" ".XIM-unix/" ".font-unix/" ".Test-unix/" "systemd-private-8495417d4ec14350bc8bc6328580ae40-postgresql.service-CVfhaM/" ".X0-lock" "fcitx-socket-:0" "emacs1000/" "babel-91404Y/" "fvwm.wid" "yaourt-tmp-ly/" "mysql-workbench.ly/" "out_Sql.sql" "vpn_oldgw" "aurvote-ly/" "directexpress-20151020095629.xlsx" "skuselling-20151019175801.xlsx" "OSL_PIPE_1000_SingleOfficeIPC_62ccead8c7c81aa5c318aa2139ea1ed3" "luyqb12x.tmp/" "../" "./")
+
+ ("/home/ly/.virtualenvs/py3.5/lib/python3.5/site-packages/xlrd/" (22053 36415 97220 139000) "doc/" "examples/" "licences.py" "book.py" "compdoc.py" "./" "sheet.py" "formatting.py" "../" "__init__.py" "xlsx.py" "__pycache__/" "xldate.py" "info.py" "formula.py" "biffh.py" "timemachine.py")
+
+ ("/home/ly/work/xytinc/ebay/" (22053 41583 33871 409000) "localorder.py" "ebay.xls" "localorder.pyc" "survey.org" "市场调查数据-ted.docx" "sellingrank.py" "ebayapidata.py" "test.xml" "uid.txt" "seller_weekly.pyc" "rst.xml" "pkbk/" "out_V3.xlsx" "data/" "cfg/" "ebay.csv" "./" "ebayplatformfee.sql" "ebapi.py" "ebaytokenstat.pyc" "__init__.pyc" "price_check.pyc" "ebaylms/" "ghostdriver.log" "productinfo1.xlsx" "ebst.py" "tokendataextract.py" "out1.xlsx" "orderexport.sql" "getuserdetailresponse.xml" "output/" "pkl/" "account.py" "timecost.pkl" "storagemanage.pyc" "../" "getusersummaryresponse.xml" "ebayapi/" "__init__.py" "apisupervisor.py" "usersummary.py" "itemlist/" "usersummary.pyc" ".~lock.price1.xlsx#" "jsonextract.py" "apitest.py" "fdw.sql" "jsonextractsimple.py" "ebaytokenstat1.pyc" "nohup.out" "ebay_addr_threads.py" "直发订单快速导出.txt" "timecost.htm" "ebapi.pyc" "__pycache__/" "ebayschema.sql" "out_V4.xlsx" "snippet.py" "ebaytokenstat1.py" "ebay_scrape.py" "seller_weekly.py" "localorder_.py" "storagemanage.py" "productinfo.xlsx" "eBayTools2.sql" "out_V5.xlsx" "需求描述.org" "out.sql" "invalidsku.xlsx" "ebayapidata.pyc" "expr.pkl" "output.xlsx" "out_V2.xlsx" "pel.pdpk" "scig_test.py" "cache_0.htm" "tst.py" "ttt.csv" "ebay_addr.py" "queryback.txt" "python-ebay/" "report.sql" "price_check.py")
+
+ ("/home/ly/.virtualenvs/py2/lib/python2.7/site-packages/xlrd/" (22052 49887 286822 812000) "doc/" "examples/" "licences.py" "book.py" "compdoc.py" "licences.pyc" "./" "sheet.py" "sheet.pyc" "__init__.pyc" "formatting.py" "info.pyc" "xlsx.pyc" "xldate.pyc" "../" "__init__.py" "xlsx.py" "compdoc.pyc" "formula.pyc" "xldate.py" "book.pyc" "formatting.pyc" "info.py" "formula.py" "biffh.py" "biffh.pyc" "timemachine.py" "timemachine.pyc")
+
+ ("/home/ly/.virtualenvs/py2/lib/python2.7/site-packages/" (22052 44299 20206 494000) "functools32-3.2.3.post2.dist-info/" "rpy2/" "ebay/" "backoff.pyc" "traitlets-4.0.0.dist-info/" "et_xmfile/" "numexpr/" "numpy-1.10.1.dist-info/" "brewer2mpl-1.4.1.dist-info/" "scgi-1.8.dist-info/" "pybars/" "requests-2.8.1.dist-info/" "pbr/" "pytz-2015.6.dist-info/" "rpy2-2.7.1.dist-info/" "pylab.py" "IPython/" "numpy/" "decorator.pyc" "singledispatch_helpers.pyc" "docutils-0.12.dist-info/" "test_path.pyc" "_mysql.so" "pylab.pyc" "singledispatch.py" "scipy-0.16.0.dist-info/" "pika/" "easy_install.pyc" "scikit_image-0.11.3.dist-info/" "jsonschema/" "Jinja2-2.8.dist-info/" "pandasql/" "path.pyc" "xlwt-1.0.0.dist-info/" "Pillow-3.0.0.dist-info/" "backoff.py" "six.py" "simplegeneric.pyc" "OleFileIO_PL.py" "olefile/" "python_dateutil-2.4.2.dist-info/" "pexpect-4.0.1.dist-info/" "MySQL_python-1.2.5.dist-info/" "jinja2/" "python_amazon_mws-0.6.dist-info/" "xlrd/" "llvmlite-0.7.0.dist-info/" "numba-0.21.0.dist-info/" "mysql_connector_python_rf-2.0.4.dist-info/" "pickleshare.py" "SOAPpy/" "ggplot/" "pickleshare-0.5.dist-info/" "wstools-0.4.3.dist-info/" "test_path.py" "pexpect/" "ply-3.8.dist-info/" "_markerlib/" "quixote/" "sqlalchemy/" "lxml/" "defusedxml/" "MySQLdb/" "pkg_resources/" "mock-1.3.0.dist-info/" "pandas/" "flask/" "xmltodict-0.9.2.dist-info/" "PyMeta3-0.5.1.dist-info/" "scikit_learn-0.16.1.dist-info/" "funcsigs/" "jdcal.py" "six-1.10.0.dist-info/" "prettytable.py" "jdcal.pyc" "prettytable-0.7.2.dist-info/" "pyparsing.py" "llvmlite/" "mysql/" "decorator.py" "wheel/" "setuptools/" "_mysql_exceptions.pyc" "singledispatch.pyc" "pyparsing.pyc" "sklearn/" "scipy/" "ipython_genutils-0.1.0.dist-info/" "beautifulsoup4-4.4.1.dist-info/" "six.pyc" "backoff-1.0.7.dist-info/" "MarkupSafe-0.23.dist-info/" "matplotlib-1.4.3.dist-info/" "flup/" "pickleshare.pyc" "xmltodict.pyc" "enum.pyc" "pandas-0.17.0.dist-info/" "matplotlib/" "networkx-1.10.dist-info/" "docutils/" "mpl_toolkits/" "_mysql_exceptions.py" "skimage/" "parmap.py" "Flask-0.10.1.dist-info/" "cubes/" "decorator-4.0.4.dist-info/" "functools32/" "markupsafe/" "parmap-1.2.3.dist-info/" "prettytable.pyc" "pika_pool.pyc" "pip-7.1.2.dist-info/" "enum.py" "flup-1.0.2.dist-info/" "jsonschema-2.5.1.dist-info/" "jdcal-1.0.dist-info/" "gfwlist2pac/" "enum-0.4.4.dist-info/" "requests/" "simplegeneric-0.8.1.dist-info/" "defusedxml-0.4.1.dist-info/" "PySimpleSOAP-1.16-py2.7.egg-info/" "xmltodict.py" "cubes-1.0.1.dist-info/" "gfwlist2pac-1.1.3.dist-info/" "openpyxl-2.2.6.dist-info/" "singledispatch-3.4.0.3.dist-info/" "itsdangerous-0.24.dist-info/" "pysimplesoap/" "numexpr-2.4.4.dist-info/" "traitlets/" "ply/" "ptyprocess-0.5.dist-info/" "wstools/" "dateutil/" "pyparsing-2.0.3.dist-info/" "pika_pool-0.1.2.dist-info/" "mock/" "xlwt/" "xvfbwrapper.pyc" "pika_pool.py" "brewer2mpl/" "itsdangerous.pyc" "db/" "python_ebay-0.2.0b5.dev0.dist-info/" "ggplot-0.6.8.dist-info/" "lxml-3.4.4.dist-info/" "statsmodels-0.6.1.dist-info/" "pbr-1.8.1.dist-info/" "ipython-4.0.0.dist-info/" "jsonpath_rw-1.4.0.dist-info/" "pybars3-0.9.1.dist-info/" "wheel-0.26.0.dist-info/" "mws/" "pytz/" "ptyprocess/" "enum34-1.0.4.dist-info/" "db.py-0.4.4.dist-info/" "statsmodels/" "jsonpath_rw/" "nose-1.3.7.dist-info/" "itsdangerous.py" "Quixote-2.8.dist-info/" "psycopg2/" "ipython_genutils/" "enum/" "xlrd-0.9.4.dist-info/" "funcsigs-0.4.dist-info/" "olefile-0.42.1.dist-info/" "Werkzeug-0.10.4.dist-info/" "XlsxWriter-0.7.6.dist-info/" "selenium-2.48.0.dist-info/" "PIL/" "easy_install.py" "psycopg2-2.6.1.dist-info/" "xlsxwriter/" "patsy/" "pymeta/" "pip/" "networkx/" "scgi/" "SQLAlchemy-1.0.8.dist-info/" "selenium/" "SOAPpy-0.12.22.dist-info/" "matplotlib-1.4.3-py2.7-nspkg.pth" "OleFileIO_PL.pyc" "setuptools-18.4.dist-info/" "suds/" "numba/" "soap2py-1.16-py2.7.egg-info/" "path.py" "xvfbwrapper-0.2.5.dist-info/" "patsy-0.4.0.dist-info/" "pika-0.10.0.dist-info/" "suds-0.4.dist-info/" "singledispatch_helpers.py" "nose/" "bs4/" "simplegeneric.py" "parmap.pyc" "pandasql-0.6.3.dist-info/" "openpyxl/" "werkzeug/" "path.py-8.1.2.dist-info/" "xvfbwrapper.py" "../" "./")
+
+ ("/home/ly/.virtualenvs/py2/lib/python2.7/" (22039 22603 220411 477000) "sre_parse.pyo" "codecs.py" "sre_constants.py" "warnings.pyo" "types.py" "abc.pyc" "re.pyo" "types.pyo" "config/" "./" "abc.pyo" "_weakrefset.pyc" "copy_reg.pyo" "codecs.pyo" "posixpath.pyc" "linecache.py" "_abcoll.pyc" "re.py" "sre_parse.pyc" "types.pyc" "os.pyc" "site.pyc" "re.pyc" "ntpath.py" "site.py" "copy_reg.py" "linecache.pyc" "../" "distutils/" "abc.py" "sre_compile.pyc" "stat.pyc" "site.pyo" "copy_reg.pyc" "sre_compile.pyo" "sre.py" "genericpath.py" "_weakrefset.pyo" "locale.py" "genericpath.pyo" "posixpath.pyo" "encodings/" "locale.pyc" "fnmatch.pyc" "sre_constants.pyc" "_abcoll.pyo" "genericpath.pyc" "posixpath.py" "sre_parse.py" "codecs.pyc" "UserDict.pyc" "stat.py" "stat.pyo" "sre_constants.pyo" "no-global-site-packages.txt" "UserDict.pyo" "os.pyo" "fnmatch.py" "os.py" "UserDict.py" "warnings.py" "linecache.pyo" "site-packages/" "_abcoll.py" "orig-prefix.txt" "lib-dynload/" "warnings.pyc" "sre_compile.py" "_weakrefset.py")
+
+ ("/home/ly/.virtualenvs/py2/lib/" (21990 35864 729299 456000) "./" "../" "python2.7/")
+
+ ("/home/ly/.virtualenvs/py2/" (22048 29663 526895 150000) "ebay/" "bin/" "share/" "./" "include/" "lib/" "../" "pip-selfcheck.json" "man/" "selenium/")
+
+ ("/home/ly/.virtualenvs/py3.5/lib/python3.5/site-packages/" (22052 44643 603536 723000) "rpy2/" "pep8.py" "traitlets-4.0.0.dist-info/" "et_xmfile/" "zmq/" "numexpr/" "unoconv-0.6.dist-info/" "numpy-1.10.1.dist-info/" "brewer2mpl-1.4.1.dist-info/" "requests-2.8.1.dist-info/" "pbr/" "pytz-2015.6.dist-info/" "rpy2-2.7.1.dist-info/" "pylab.py" "IPython/" "numpy/" "pep8-1.6.2.dist-info/" "alabaster/" "docutils-0.12.dist-info/" "pika/" "safe_access-1.1.dist-info/" "matplotlib-1.4.3-py3.5-nspkg.pth" "scikit_image-0.11.3.dist-info/" "notebook-4.0.6.dist-info/" "jsonschema/" "mistune.py" "Jinja2-2.8.dist-info/" "pandasql/" "xlwt-1.0.0.dist-info/" "Pillow-3.0.0.dist-info/" "six.py" "OleFileIO_PL.py" "olefile/" "pygments/" "python_dateutil-2.4.2.dist-info/" "pexpect-4.0.1.dist-info/" "jinja2/" "xlrd/" "llvmlite-0.7.0.dist-info/" "numba-0.21.0.dist-info/" "mysql_connector_python_rf-2.0.4.dist-info/" "pickleshare.py" "ggplot/" "pickleshare-0.5.dist-info/" "autopep8-1.2.1.dist-info/" "test_path.py" "pyximport/" "testpath/" "pexpect/" "_markerlib/" "sqlalchemy/" "lxml/" "rope/" "flake8-2.4.1.dist-info/" "importmagic/" "pkg_resources/" "mock-1.3.0.dist-info/" "pandas/" "terminado-0.5.dist-info/" "appnope/" "flask/" "xmltodict-0.9.2.dist-info/" "scikit_learn-0.16.1.dist-info/" "mccabe.py" "jdcal.py" "six-1.10.0.dist-info/" "terminado/" "prettytable.py" "prettytable-0.7.2.dist-info/" "Cython/" "ipyparallel-4.0.2.dist-info/" "pyparsing.py" "llvmlite/" "mysql/" "decorator.py" "pycparser/" "wheel/" "flake8/" "setuptools/" "autopep8.py" "sklearn/" "numpydoc/" "nbconvert-4.0.0.dist-info/" "scipy/" "ipython_genutils-0.1.0.dist-info/" "beautifulsoup4-4.4.1.dist-info/" "tornado/" "jupyter_client/" "mccabe-0.3.1.dist-info/" "MarkupSafe-0.23.dist-info/" "matplotlib-1.4.3.dist-info/" "jedi/" "cffi/" "Babel-2.1.1.dist-info/" "gnureadline-6.3.3.dist-info/" "pandas-0.17.0.dist-info/" "matplotlib/" "networkx-1.10.dist-info/" "tornado-4.2.1.dist-info/" "docutils/" "mpl_toolkits/" "skimage/" "parmap.py" "Flask-0.10.1.dist-info/" "cubes/" "decorator-4.0.4.dist-info/" "pyflakes/" "markupsafe/" "parmap-1.2.3.dist-info/" "ipykernel-4.1.0.dist-info/" "snowballstemmer/" "pycparser-2.14.dist-info/" "mistune-0.7.1.dist-info/" "pip-7.1.2.dist-info/" "jupyter_core-4.0.6.dist-info/" "Pygments-2.0.2.dist-info/" "jsonschema-2.5.1.dist-info/" "jdcal-1.0.dist-info/" "alabaster-0.7.6.dist-info/" "readline.py" "requests/" "simplegeneric-0.8.1.dist-info/" "pyreadline-2.1.dist-info/" "jupyter_core/" "xmltodict.py" "cubes-1.0.1.dist-info/" "openpyxl-2.2.6.dist-info/" "notebook/" "jedi-0.9.0.dist-info/" "itsdangerous-0.24.dist-info/" "numexpr-2.4.4.dist-info/" "traitlets/" "qtconsole/" "ptyprocess-0.5.dist-info/" "dateutil/" "Cython-0.23.4.dist-info/" "pyparsing-2.0.3.dist-info/" "__pycache__/" "pika_pool-0.1.2.dist-info/" "mock/" "ipykernel/" "pyzmq-14.7.0.dist-info/" "xlwt/" "gnureadline.cpython-35m-x86_64-linux-gnu.so" "pika_pool.py" "brewer2mpl/" "ggplot-0.6.8.dist-info/" "lxml-3.4.4.dist-info/" "babel/" "safe_access/" "pyflakes-1.0.0.dist-info/" "nbformat-4.0.1.dist-info/" "pbr-1.8.1.dist-info/" "ipython-4.0.0.dist-info/" "sphinx/" "sphinx_rtd_theme/" "ipyparallel/" "wheel-0.26.0.dist-info/" "elpy-1.9.0.dist-info/" "pytz/" "ptyprocess/" "statsmodels/" "nose-1.3.7.dist-info/" "nbformat/" "itsdangerous.py" "psycopg2/" "elpy/" "importmagic-0.1.3.dist-info/" "qtconsole-4.0.1.dist-info/" "ipython_genutils/" "xlrd-0.9.4.dist-info/" "olefile-0.42.1.dist-info/" "cython.py" "Werkzeug-0.10.4.dist-info/" "pyreadline/" "XlsxWriter-0.7.6.dist-info/" "sphinx_rtd_theme-0.1.9.dist-info/" "PIL/" "easy_install.py" "psycopg2-2.6.1.dist-info/" "xlsxwriter/" "patsy/" "pip/" "snowballstemmer-1.2.0.dist-info/" "networkx/" "_cffi_backend.cpython-35m-x86_64-linux-gnu.so" "SQLAlchemy-1.0.8.dist-info/" "rope_py3k-0.9.4.post1.dist-info/" "appnope-0.1.0.dist-info/" "testpath-0.2.dist-info/" "setuptools-18.4.dist-info/" "statsmodels-0.8.0-py3.5.egg-info/" "numba/" "path.py" "numpydoc-0.5.dist-info/" "xvfbwrapper-0.2.5.dist-info/" "patsy-0.4.0.dist-info/" "pika-0.10.0.dist-info/" "scipy-0.16.0-py3.5.egg-info/" "jupyter_client-4.1.1.dist-info/" "nose/" "bs4/" "Sphinx-1.3.1.dist-info/" "simplegeneric.py" "pandasql-0.6.3.dist-info/" "openpyxl/" "nbconvert/" "werkzeug/" "path.py-8.1.2.dist-info/" "xvfbwrapper.py" "cffi-1.2.1.dist-info/" "../" "./")
+
+ ("/home/ly/.virtualenvs/py3.5/lib/python3.5/" (22037 61135 263380 146000) "_collections_abc.py" "codecs.py" "_dummy_thread.py" "plat-linux/" "sre_constants.py" "heapq.py" "importlib/" "types.py" "imp.py" "_bootlocale.py" "./" "struct.py" "linecache.py" "weakref.py" "rlcompleter.py" "re.py" "ntpath.py" "site.py" "hashlib.py" "tarfile.py" "token.py" "../" "distutils/" "abc.py" "operator.py" "reprlib.py" "bisect.py" "hmac.py" "genericpath.py" "locale.py" "shutil.py" "keyword.py" "encodings/" "__pycache__/" "tempfile.py" "base64.py" "tokenize.py" "posixpath.py" "sre_parse.py" "functools.py" "config-3.5m/" "collections/" "stat.py" "copy.py" "__future__.py" "no-global-site-packages.txt" "fnmatch.py" "os.py" "io.py" "warnings.py" "site-packages/" "random.py" "orig-prefix.txt" "lib-dynload/" "copyreg.py" "sre_compile.py" "_weakrefset.py")
+
+ ("/home/ly/.virtualenvs/py3.5/lib/" (22037 61135 193380 149000) "./" "../" "python3.5/")
+
+ ("/home/ly/.virtualenvs/py3.5/" (22037 61211 203377 630000) "bin/" "share/" "./" "include/" "lib/" "../" "pip-selfcheck.json" "man/")
+
+ ("/home/ly/.virtualenvs/" (22052 44273 350206 725000) "predeactivate" "initialize" "py3.4/" "./" "premkproject" "../" "postrmvirtualenv" "postactivate" "postmkproject" "premkvirtualenv" "py3.5/" "preactivate" "postdeactivate" "get_env_details" "postmkvirtualenv" "prermvirtualenv" "py3/" "py2/")
+
+ ("/home/ly/work/xytinc/" (22052 21112 423773 152000) "schedule/" "ebay/" "data/" "utils/" "amazon/" "./" "graphdigitize/" "chukou1/" "webgrap/" "__init__.pyc" "customers/" "refs/" "olap/" "misc/" "pyserver/" "../" "__init__.py" "early_comparation/" "gfwlist/" "sfc/" "projects.org" "ramqp/" "__pycache__/" "omsthreadpool/" ".gitignore" "financial/" "signature/" "finacial/" ".git/" "dsl/" "cdc/")
 
  ("/home/ly/work/xytinc/sfc/" (22044 39429 690931 49000) "sfcapi.py" "./" "testdate.py" "__init__.pyc" "sfcapi.pyc" "../" "__init__.py" "#testdate.py#" "__pycache__/")
 
- ("/home/ly/.emacs.d/lisp/" (22047 21755 148800 788000) "init-compat.el" "init-osx-keys.el" "init-vc.el" "init-utils.el" "init-html.el" "init-csv.el" "init-site-lisp.el" "init-paredit.el" "init-benchmarking.el" "init-windows.el" "init-ido.el" "./" "init-crontab.el" "init-fonts.el" "init-css.el" "init-gui-frames.el" "init-dash.el" "init-rails.el" "init-php.el" "init-markdown.el" "init-common-lisp.el" "init-slime.el" "init-haml.el" "init-clojure-cider.el" "init-haskell.el" "init-nxml.el" "init-setupterm.el" "init-isearch.el" "init-elpa.el" ".dir-locals.el" "init-locales.el" "init-git.el" "../" "init-frame-hooks.el" "init-macros.el" "init-flycheck.el" "init-editing-utils.el" "init-erlang.el" "init-lisp.el" "init-textile.el" "init-hippie-expand.el" "init-local.el" "init-recentf.el" "init-sessions.el" "init-sqlpasswd.el.gpg" "init-elm.el" "init-xterm.el" "init-auto-complete.el" "init-uniquify.el" "init-dired.el" "init-exec-path.el" "init-javascript.el" "init-misc.el" "init-flyspell.el" "init-compile.el" "init-python-mode.el" "init-darcs.el" "init-ibuffer.el" "init-org.el" "init-sql.el" "init-themes.el" "init-ruby-mode.el" "init-grep.el" "init-ledger.el" "init-github.el" "init-clojure.el" "init-spelling.el" "init-mmm.el")
-
- ("/tmp/" (22048 44371 477873 395000) ".X11-unix/" ".ICE-unix/" ".XIM-unix/" ".font-unix/" ".Test-unix/" "systemd-private-04eb2f63b6db482b8b1cfe951c84e9af-postgresql.service-Pzut66/" ".X0-lock" "fcitx-socket-:0" "emacs1000/" "babel-2912XmE/" "fvwm.wid" "skuselling-20151016085830.xlsx" "yaourt-tmp-ly/" "头程入库信息接口-v2.docx" "CK1-Partner-Api-Saas-20150820.doc" "CK1-Partner-Api-Saas-20150820-1.doc" "头程入库信息接口-v2-1.docx" "OSL_PIPE_1000_SingleOfficeIPC_62ccead8c7c81aa5c318aa2139ea1ed3" "lut69tmf.tmp/" "CK1-Partner-Api-Saas-20150820-2.doc" "附件1：寿星公分组详情.xls" "附件2：制作果盘工具及预算.docx" "vpn_oldgw" "2015-09-11周计划/" "2015-10-10周计划/" "2015-10-16周计划/" "2015-10-16/" ".vbox-ly-ipc/" "2015-10-10/" "skuselling-20151016143620.xlsx" "directexpress-20151016084934.xlsx" "../" "./")
-
  ("/home/ly/work/xytinc/pyserver/templates/logistics/" (22043 26362 88443 928000) "./" "../" "responsepricing.html" "getpricing.html")
-
- ("/home/ly/work/xytinc/utils/" (22044 29776 720474 469000) "sendmail.pyc" "urlget.pyc" "./" "__init__.pyc" "dbconn.pyc" "../" "__init__.py" "#urlget.py#" "sendmail.py" "__pycache__/" "urlget.py" "exchangerate.py" "dbconn.py")
-
- ("/home/ly/work/xytinc/chukou1/" (22048 35225 751344 279000) "apiwrapper.py" "test.php" "tmp/" "test.py" "ckyapi.py" "mtoc.py" "cfg/" "./" "__init__.pyc" "parterner.pyc" "../" "__init__.py" "freight_allot.py" "#presuretest.py#" "fetchdata.py" "__pycache__/" "apiwrapper.pyc" "parterner.py" "conf/" "presuretest.py" "ck1-api-v3-add-未公开接口-20150116.html" "freight_allot.pyc" "dfsfc.pkl")
-
- ("/home/ly/tmp/" (22048 27287 996930 879000) "llvm-3.6.2-4-x86_64.pkg.tar.xz" "llvm-libs-3.6.2-4-x86_64.pkg.tar.xz" "../" "./")
-
- ("/home/ly/work/xytinc/ebay/" (22047 13442 228875 685000) "localorder.py" "ebay.xls" "localorder.pyc" "survey.org" "市场调查数据-ted.docx" "sellingrank.py" "ebayapidata.py" "test.xml" "uid.txt" "seller_weekly.pyc" "rst.xml" "pkbk/" "out_V3.xlsx" "data/" "cfg/" "ebay.csv" "./" "ebayplatformfee.sql" "ebapi.py" "ebaytokenstat.pyc" "__init__.pyc" "price_check.pyc" "ebaylms/" "ghostdriver.log" "productinfo1.xlsx" "ebst.py" "tokendataextract.py" "out1.xlsx" "orderexport.sql" "getuserdetailresponse.xml" "output/" "pkl/" "account.py" "timecost.pkl" "storagemanage.pyc" "../" "getusersummaryresponse.xml" "ebayapi/" "__init__.py" "apisupervisor.py" "usersummary.py" "itemlist/" "usersummary.pyc" ".~lock.price1.xlsx#" "jsonextract.py" "apitest.py" "fdw.sql" "jsonextractsimple.py" "ebaytokenstat1.pyc" "nohup.out" "ebay_addr_threads.py" "直发订单快速导出.txt" "timecost.htm" "ebapi.pyc" "__pycache__/" "ebayschema.sql" "out_V4.xlsx" "snippet.py" "ebaytokenstat1.py" "ebay_scrape.py" "seller_weekly.py" "localorder_.py" "storagemanage.py" "productinfo.xlsx" "eBayTools2.sql" "out_V5.xlsx" "需求描述.org" "out.sql" "invalidsku.xlsx" "ebayapidata.pyc" "expr.pkl" "output.xlsx" "out_V2.xlsx" "pel.pdpk" "scig_test.py" "cache_0.htm" "tst.py" "ttt.csv" "ebay_addr.py" "queryback.txt" "python-ebay/" "report.sql" "price_check.py")
-
- ("/home/ly/work/xytinc/pyserver/" (22047 6091 780256 368000) "flasksimple.py" "ufinance-EGK-2015-09-01.xls" "scgisrv/" "prodex-A1M.xls" "uorder-2015-10-01.xlsx" "secex-GZY.xls" "tmp/" "secex-A1M.xls" "test.py" "ebay账号.txt" "data/" "cfg/" "flaskserv.py" "demofactory.pyc" "./" "prodex-2GV.xls" "direx-EGK.xls" "uorder-EGK-2015-09-01.xls" "main.py" "direx-A1M.xls" "__init__.pyc" "demo.conf" "ghostdriver.log" "main1.pyc" "output/" "invex-GZY.xls" "invex-A1M.xls" "srvxyt.py" "scgiserver.py" "invex-EGK.xls" "index.html" "../" "scgifactory.pyc" "__init__.py" "direx-2GV.xls" "scgixyt/" "xmlrpc_server.py" "pricestd.csv" "prodex-EGK.xls" "__pycache__/" "direx-GZY.xls" "demofactory.py" "scgioms/" "scgi_server.py" "prodex-GZY.xls" "ufinance-2015-10-01.xlsx" "secex-2GV.xls" "srvxyt.pyc" "demo_scgi.sh" "static/" "secex-EGK.xls" "demo/" "invex-2GV.xls" "tornadoserv.py" "scgifactory.py" "main.pyc" "templates/")
 
  ("/home/ly/work/xytinc/omsthreadpool/" (22044 37200 140951 137000) "#main.py#" "multitheading.py" "./" "main.py" "__init__.pyc" "../" "__init__.py" "__pycache__/" "server.py" "server.pyc" "scgifactory.py" "main.pyc")
 
  ("/home/ly/work/xytinc/finacial/" (22047 2392 666956 361000) "#main.py#" "./" "main.py" "__init__.pyc" "finacail.org" "../" "__init__.py" "__pycache__/" "main.pyc")
-
- ("/home/ly/work/xytinc/customers/" (22048 18848 930391 136000) "expressorders.py" "balence.py" "./" "skurecentselling.py" "#skurecentselling.py#" "../" "__init__.py" "__pycache__/")
 
  ("/home/ly/.virtualenvs/py3/lib/python3.4/site-packages/flask/" (22039 5858 473605 407000) "json.py" "testing.py" "wrappers.py" "views.py" "./" "signals.py" "logging.py" "_compat.py" "exthook.py" "../" "__init__.py" "helpers.py" "debughelpers.py" "config.py" "__pycache__/" "testsuite/" "blueprints.py" "globals.py" "ctx.py" "sessions.py" "templating.py" "module.py" "ext/" "app.py")
 
@@ -149,8 +179,6 @@
  ("/home/ly/work/xytinc/chukou1/conf/" (22037 54435 426935 466000) "config.xml" "./" "../")
 
  ("/home/ly/tmp/statsmodels/" (22038 1963 964493 119000) ".git/" ".bzrignore" ".coveragerc" ".gitattributes" ".gitignore" ".mailmap" ".travis.yml" ".travis_coveragerc" "CHANGES.md" "CONTRIBUTING.rst" "COPYRIGHTS.txt" "INSTALL.txt" "LICENSE.txt" "MANIFEST.in" "README.rst" "README_l1.txt" "build_bdists.bat" "docs/" "examples/" "ez_setup.py" "setup.py" "statsmodels/" "tools/" "../" "./")
-
- ("/home/ly/work/xytinc/" (22037 63369 354629 980000) "schedule/" "ebay/" "data/" "utils/" "amazon/" "./" "graphdigitize/" "chukou1/" "webgrap/" "__init__.pyc" "customers/" "refs/" "misc/" "pyserver/" "../" "__init__.py" "early_comparation/" "gfwlist/" "sfc/" "projects.org" "ramqp/" "__pycache__/" "omsthreadpool/" ".gitignore" "financial/" "signature/" "finacial/" ".git/" "dsl/" "cdc/")
 
  ("/home/ly/work/xytinc/pyserver/scgisrv/" (22027 41354 693300 938000) "forms.ptl" "altdemo.pyc" "root.ptl" "./" "__init__.pyc" "simple_server.py" "../" "__init__.py" "mini_demo.pyc" "extras.ptl" "__pycache__/" "mini_demo.py" "integers.ptl" "dsl.pyc" "storage.pyc" "altdemo.py" "dsl.ptl" "storage.ptl")
 
@@ -181,8 +209,6 @@
  ("/home/ly/.virtualenvs/py3/lib/" (21990 35193 752638 835000) "./" "python3.4/" "../")
 
  ("/home/ly/.virtualenvs/py3/" (21997 13108 302612 612000) "ebay/" "bin/" "share/" "./" "include/" "lib/" "../" "pip-selfcheck.json" "man/")
-
- ("/home/ly/.virtualenvs/" (21990 35864 729299 456000) "predeactivate" "initialize" "./" "premkproject" "../" "postrmvirtualenv" "postactivate" "postmkproject" "premkvirtualenv" "preactivate" "postdeactivate" "get_env_details" "postmkvirtualenv" "prermvirtualenv" "py3/" "py2/")
 
  ("/tmp/rinse/rinse/tests/" (22007 57840 779950 1000) "__init__.py" "test_client.py" "utils.py" "__pycache__/" "../" "./")
 
@@ -291,26 +317,6 @@
  ("/home/ly/work/xytinc/graphdigitize/" (21721 30266 468342 460000) "./" "src/" "../")
 
  ("/home/ly/documents/signature/" (21716 24159 694710 450000) "xytinc.htm" "./" "general.htm" "../" "huawei.htm" "pactera.htm")
-
- ("/home/ly/work/xytinc/webgrap/src/test/" (21716 21192 291466 487000) "test.py" "./" "ghostdriver.log" "../" "test.py~" "__pycache__/")
-
- ("/home/ly/.emacs.d/elpa/realgud-20150204.457/realgud/common/" (21716 6651 741904 414000) "track-mode.elc" "bp-image-data.elc" "run.elc" "backtrack-mode.el" "fringe.elc" "fringe.el" "helper.elc" "reset.elc" "init.elc" "window.elc" "follow.el" "./" "cmds.elc" "shortkey.el" "track.elc" "file.elc" "track-mode.el" "custom.el" "backtrace-mode.el" "bp.elc" "init.el" "attach.el" "menu.el" "lochist.el" "custom.elc" "follow.elc" "../" "regexp.elc" "bp.el" "run.el" "lochist.elc" "lang.elc" "shortkey.elc" "cmds.el" "window.el" "key.elc" "buffer/" "bp-image-data.el" "send.elc" "loc.el" "backtrack-mode.elc" "core.el" "key.el" "loc.elc" "helper.el" "track.el" "regexp.el" "reset.el" "backtrace-mode.elc" "core.elc" "file.el" "send.el" "lang.el" "attach.elc" "menu.elc")
-
- ("/home/ly/.emacs.d/elpa/realgud-20150204.457/realgud/" (21716 6648 808571 168000) "./" "../" "lang/" "common/" "debugger/")
-
- ("/home/ly/.emacs.d/elpa/realgud-20150204.457/" (21716 7812 625202 784000) "realgud.elc" "./" "realgud.el" "realgud-pkg.el" "../" "realgud/" "realgud-autoloads.el")
-
- ("/home/ly/.local/lib/python3.4/site-packages/lxml/html/" (21716 4999 35287 521000) "builder.py" "ElementSoup.py" "formfill.py" "./" "defs.py" "_html5builder.py" "../" "__init__.py" "clean.py" "__pycache__/" "diff.py" "html5parser.py" "usedoctest.py" "soupparser.py" "_setmixin.py" "_diffcommand.py")
-
- ("/home/ly/.pentadactyl/plugins/" (21713 39095 708370 329000) "stylish.js" "./" "../")
-
- ("/home/ly/.emacs.d/site-lisp/org/" (21712 39058 730937 985000) "ox-taskjuggler.el" "./" "../")
-
- ("/home/ly/work/xytinc/early_comparation/" (21711 21265 581445 221000) "data/" "./" "src/" "output/" "../" ".gitignore" "竞争对手及产品列表.xlsx" ".git/")
-
- ("/home/ly/work/xytinc/shedule/" (21710 61099 701831 781000) "./" "../")
-
- ("/home/" (21694 29587 912249 178000) "./" "ly/" "../" "lost+found/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
