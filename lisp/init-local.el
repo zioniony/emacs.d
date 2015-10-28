@@ -74,6 +74,9 @@
 ;;         ))
 (global-set-key (kbd "C-x t") 'sdcv-search-pointer+)
 
+;; (global-hl-line-mode 1)
+;; (set-face-background 'hl-line "#333333")
+
 (display-time-mode 1)
 
 ;; Fill Column Indicator (fci-mode)
