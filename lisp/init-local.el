@@ -79,6 +79,9 @@
 
 (display-time-mode 1)
 
+;;; make tab-complete work in yas feild
+(setq yas/triggers-in-field t);
+
 ;; Fill Column Indicator (fci-mode)
 ;; (require 'fill-column-indicator)
 (setq fci-rule-column 80)
