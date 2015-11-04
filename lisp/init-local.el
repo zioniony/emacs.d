@@ -9,6 +9,8 @@
 ;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
+;;; click Shift + Mid-Mouse to open url
+(global-set-key [S-mouse-2] 'browse-url-at-mouse)
 (after-load 'python (define-key python-mode-map (kbd "C-c r") 'python-shell-send-region))
 ;; (define-key python-mode-map (kbd "C-c f") 'python-shell-send-defun)
 ;;(global-set-key "\C-\\" nil)
