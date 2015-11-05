@@ -122,34 +122,34 @@
 
 ;;; custom-set-variables
 (custom-set-variables
-  '(custom-enabled-themes (quote (tangotango)))
-  '(custom-safe-themes
-	 (quote
-	   ("49e5a7955b853f70d1fe751b2f896921398b273aa62f47bda961a45f80219581" default)))
-  '(desktop-restore-frames nil)
-  '(session-use-package t nil (session))
-  ;; set time interval of echo area
-  '(suggest-key-bindings 3)
-  '(diff-command "diff")
-  '(diff-switches "-Nau1")
+ '(custom-enabled-themes (quote (tangotango)))
+ '(custom-safe-themes
+   (quote
+    ("49e5a7955b853f70d1fe751b2f896921398b273aa62f47bda961a45f80219581" default)))
+ '(desktop-restore-frames nil)
+ '(session-use-package t nil (session))
+ ;; set time interval of echo area
+ '(suggest-key-bindings 3)
+ '(diff-command "diff")
+ '(diff-switches "-Nau1")
 
-  ;; '(sql-product 'postgres)
-  ;; '(sql-postgres-login-params
-  ;;   '((user :default "postgres")
-  ;;     (database :default "dbg3")
-  ;;     (server :default "localhost")))
-  '(sql-postgres-options '("-P" "pager=off"))
+ ;; '(sql-product 'postgres)
+ ;; '(sql-postgres-login-params
+ ;;   '((user :default "postgres")
+ ;;     (database :default "dbg3")
+ ;;     (server :default "localhost")))
+ '(sql-postgres-options '("-P" "pager=off"))
 
-  ;; set shell used by multi-term
-  '(multi-term-program "/bin/zsh")
-  '(org-taskjuggler-process-command "tj3 --no-color --output-dir %o %f")
-  '(org-taskjuggler-reports-directory "output")
+ ;; set shell used by multi-term
+ '(multi-term-program "/bin/zsh")
+ '(org-taskjuggler-process-command "tj3 --no-color --output-dir %o %f")
+ '(org-taskjuggler-reports-directory "output")
  '(org-confirm-babel-evaluate nil)
  ;; python
  '(python-shell-interpreter-args "-i")
  '(python-shell-interpreter-interactive-arg "-i")
-  ;'(python-shell-interpreter-args "-i --gui=qt4")
-  ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
+                                        ;'(python-shell-interpreter-args "-i --gui=qt4")
+                                        ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
  ;; ess latex
  '(TeX-engine (quote xetex))
  '(ess-swv-pdflatex-commands '("xelatex"))
@@ -163,6 +163,7 @@
 
 ;;; from https://github.com/tmtxt/.emacs.d/blob/master/config/tmtxt-sql.el
 ;;; guide https://truongtx.me/2014/08/23/setup-emacs-as-an-sql-database-client/
+(setq sql-mysql-options '("--auto-rehash"))
 (setq sql-connection-alist
       '((report (sql-product 'postgres)
                 (sql-port 5432)
