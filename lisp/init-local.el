@@ -9,6 +9,8 @@
 ;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
+;;; click Shift + Mid-Mouse to open url
+(global-set-key [S-mouse-2] 'browse-url-at-mouse)
 (after-load 'python (define-key python-mode-map (kbd "C-c r") 'python-shell-send-region))
 ;; (define-key python-mode-map (kbd "C-c f") 'python-shell-send-defun)
 ;;(global-set-key "\C-\\" nil)
@@ -74,7 +76,13 @@
 ;;         ))
 (global-set-key (kbd "C-x t") 'sdcv-search-pointer+)
 
+;; (global-hl-line-mode 1)
+;; (set-face-background 'hl-line "#333333")
+
 (display-time-mode 1)
+
+;;; make tab-complete work in yas feild
+(setq yas/triggers-in-field t);
 
 ;; Fill Column Indicator (fci-mode)
 ;; (require 'fill-column-indicator)
@@ -115,34 +123,34 @@
 
 ;;; custom-set-variables
 (custom-set-variables
-  '(custom-enabled-themes (quote (tangotango)))
-  '(custom-safe-themes
-	 (quote
-	   ("49e5a7955b853f70d1fe751b2f896921398b273aa62f47bda961a45f80219581" default)))
-  '(desktop-restore-frames nil)
-  '(session-use-package t nil (session))
-  ;; set time interval of echo area
-  '(suggest-key-bindings 3)
-  '(diff-command "diff")
-  '(diff-switches "-Nau1")
+ '(custom-enabled-themes (quote (tangotango)))
+ '(custom-safe-themes
+   (quote
+    ("49e5a7955b853f70d1fe751b2f896921398b273aa62f47bda961a45f80219581" default)))
+ '(desktop-restore-frames nil)
+ '(session-use-package t nil (session))
+ ;; set time interval of echo area
+ '(suggest-key-bindings 3)
+ '(diff-command "diff")
+ '(diff-switches "-Nau1")
 
-  ;; '(sql-product 'postgres)
-  ;; '(sql-postgres-login-params
-  ;;   '((user :default "postgres")
-  ;;     (database :default "dbg3")
-  ;;     (server :default "localhost")))
-  '(sql-postgres-options '("-P" "pager=off"))
+ ;; '(sql-product 'postgres)
+ ;; '(sql-postgres-login-params
+ ;;   '((user :default "postgres")
+ ;;     (database :default "dbg3")
+ ;;     (server :default "localhost")))
+ '(sql-postgres-options '("-P" "pager=off"))
 
-  ;; set shell used by multi-term
-  '(multi-term-program "/bin/zsh")
-  '(org-taskjuggler-process-command "tj3 --no-color --output-dir %o %f")
-  '(org-taskjuggler-reports-directory "output")
+ ;; set shell used by multi-term
+ '(multi-term-program "/bin/zsh")
+ '(org-taskjuggler-process-command "tj3 --no-color --output-dir %o %f")
+ '(org-taskjuggler-reports-directory "output")
  '(org-confirm-babel-evaluate nil)
  ;; python
  '(python-shell-interpreter-args "-i")
  '(python-shell-interpreter-interactive-arg "-i")
-  ;'(python-shell-interpreter-args "-i --gui=qt4")
-  ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
+                                        ;'(python-shell-interpreter-args "-i --gui=qt4")
+                                        ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
  ;; ess latex
  '(TeX-engine (quote xetex))
  '(ess-swv-pdflatex-commands '("xelatex"))
@@ -156,6 +164,7 @@
 
 ;;; from https://github.com/tmtxt/.emacs.d/blob/master/config/tmtxt-sql.el
 ;;; guide https://truongtx.me/2014/08/23/setup-emacs-as-an-sql-database-client/
+(setq sql-mysql-options '("--auto-rehash"))
 (setq sql-connection-alist
       '((report (sql-product 'postgres)
                 (sql-port 5432)

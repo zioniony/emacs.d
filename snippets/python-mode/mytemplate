@@ -1,0 +1,25 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: mytemplate
+# key: tpl
+# binding: direct-keybinding
+# --
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import logging
+from xytinc.config import getworkdir
+$1
+logger = logging.getLogger(__name__)
+
+
+$0
+
+if __name__ == '__main__':
+    # logging.basicConfig(
+    #     format='%(asctime)s %(process)d %(levelname)s:%(name)s:%(message)s',
+    #     level=logging.INFO)
+    logging.basicConfig(
+        filename='/tmp/%s.log' % __file__.split(getworkdir())[-1].replace("/", '.'),
+        format='%(asctime)s %(process)d %(levelname)s:%(name)s:%(message)s',
+        level=logging.INFO, filemode='a')
+    logger.setLevel(logging.DEBUG)
+
