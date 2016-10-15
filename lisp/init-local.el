@@ -39,6 +39,7 @@
 (require 'ox-taskjuggler)
 
 ;;; realgud
+(require-package 'realgud)
 (require 'realgud)
 
 ;; sdcv is dependent on showtip
