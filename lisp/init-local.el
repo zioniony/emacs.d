@@ -273,7 +273,7 @@
          "- %?\n %x\n")))
 ;; active Babel languages
 ;;; http://doc.norang.ca/org-mode.html#OrgBabel
-(setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")
+;;; (setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")
 (setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 
 (add-hook 'org-babel-after-execute-hook 'bh/display-inline-images 'append)
