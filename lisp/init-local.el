@@ -110,10 +110,11 @@
 (require-package 'pyvenv)
 ;; (add-hook 'python-mode-hook (pyvenv-workon "py3"))
 (require-package 'highlight-indentation)
-(pyvenv-workon "py3.4")
+;; (pyvenv-workon "py3.4")
 (elpy-enable)
 (elpy-use-ipython)
 (pyvenv-workon "py3.5")
+;;(setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
 ;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
@@ -148,7 +149,8 @@
  '(org-taskjuggler-reports-directory "output")
  '(org-confirm-babel-evaluate nil)
  ;; python
- '(python-shell-interpreter-args "-i")
+ ;; simple-prompt: see https://github.com/jorgenschaefer/elpy/issues/949
+ '(python-shell-interpreter-args "-i --simple-prompt --pprint")
  '(python-shell-interpreter-interactive-arg "-i")
                                         ;'(python-shell-interpreter-args "-i --gui=qt4")
                                         ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
