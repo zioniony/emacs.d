@@ -119,6 +119,21 @@
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
 ;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
 
+(require-package 'go-mode)
+(require 'go-mode-load)
+(require-package 'go-eldoc)
+(require-package 'company-go)
+(require-package 'go-snippets)
+(add-hook 'go-mode-hook 'go-eldoc-setup)
+(add-hook 'go-mode-hook (lambda ()
+                          (set (make-local-variable 'company-backends) '(company-go))
+                          (company-mode)))
+(setq company-tooltip-limit 20)                      ; bigger popup window
+(setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
+(setq company-echo-delay 0)                          ; remove annoying blinking
+(setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
+(add-hook 'before-save-hook 'gofmt-before-save)
+
 (require-package 'adoc-mode)
 (require-package 'company)
 (require-package 'tangotango-theme)
@@ -135,7 +150,8 @@
  '(suggest-key-bindings 3)
  '(diff-command "diff")
  '(diff-switches "-Nau1")
-
+ ;; tab width
+ '(tab-width 4)
  ;; '(sql-product 'postgres)
  ;; '(sql-postgres-login-params
  ;;   '((user :default "postgres")
