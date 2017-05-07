@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 ;; set path:
+;; example of setting env var named “path”, by appending a new path to existing path
+(setenv "PATH" (concat "~/miniconda3/bin" ":" (getenv "PATH")))
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
 ;;(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
@@ -107,27 +109,27 @@
 ;; (add-hook 'org-mode-hook 'electric-spacing-mode)
 
 (require-package 'elpy)
-(require-package 'pyvenv)
+;; (require-package 'pyvenv)
 ;; (add-hook 'python-mode-hook (pyvenv-workon "py3"))
 (require-package 'highlight-indentation)
 ;; (pyvenv-workon "py3.4")
 (elpy-enable)
 (elpy-use-ipython)
-(pyvenv-workon "py3.5")
+(pyvenv-workon "currentpy")
 ;;(setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
 ;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
 
-(require-package 'go-mode)
-(require 'go-mode-load)
-(require-package 'go-eldoc)
-(require-package 'company-go)
-(require-package 'go-snippets)
-(add-hook 'go-mode-hook 'go-eldoc-setup)
-(add-hook 'go-mode-hook (lambda ()
-                          (set (make-local-variable 'company-backends) '(company-go))
-                          (company-mode)))
+;(require-package 'go-mode)
+;(require 'go-mode-load)
+;(require-package 'go-eldoc)
+;(require-package 'company-go)
+;(require-package 'go-snippets)
+;(add-hook 'go-mode-hook 'go-eldoc-setup)
+;(add-hook 'go-mode-hook (lambda ()
+;(set (make-local-variable 'company-backends) '(company-go))
+;(company-mode)))
 (setq company-tooltip-limit 20)                      ; bigger popup window
 (setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
 (setq company-echo-delay 0)                          ; remove annoying blinking
@@ -475,6 +477,25 @@ Will work on both `org-mode' and any mode that accepts plain html."
 (global-set-key (kbd "<M-right>") 'shift-right-tab)
 
 
+(defun python-args-to-google-docstring (text &optional make-fields)
+  "Return a reST docstring format for the python arguments in yas-text."
+  (let* ((indent (concat "\n" (make-string (current-column) 32)))
+         (args (python-split-args text))
+         (nr 0)
+         (formatted-args
+          (mapconcat
+           (lambda (x)
+             (concat "   " (nth 0 x)
+                     (if make-fields (format " ${%d:arg%d}" (incf nr) nr))
+                     (if (nth 1 x) (concat " \(default " (nth 1 x) "\)"))))
+           args
+           indent)))
+    (unless (string= formatted-args "")
+      (concat
+       (mapconcat 'identity
+                  (list "" "Args:" formatted-args)
+                  indent)
+       "\n"))))
 
 (provide 'init-local)
 ;;; init-local.el ends here
