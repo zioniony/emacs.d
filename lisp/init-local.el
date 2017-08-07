@@ -56,7 +56,8 @@
 ;;       auto-mode-alist (cons '("\\.jl$"         . sawfish-mode) auto-mode-alist)
 ;;       auto-mode-alist (cons '("\\.sawfish/rc$" . sawfish-mode) auto-mode-alist))
 
-
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "chromium")
 (setq display-time-format "%Y-%m-%d %H:%M")
 
 (setq sdcv-dictionary-simple-list        ;; a simple dictionary list
