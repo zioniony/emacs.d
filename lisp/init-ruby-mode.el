@@ -49,22 +49,13 @@
 
 
 ;;; Robe
-(require-package 'robe)
-(after-load 'ruby-mode
-  (add-hook 'ruby-mode-hook 'robe-mode))
-(after-load 'company
-  (dolist (hook '(ruby-mode-hook inf-ruby-mode-hook html-erb-mode-hook haml-mode))
-    (add-hook hook
-              (lambda () (sanityinc/local-push-company-backend 'company-robe)))))
-
-
-
-;; Customise highlight-symbol to not highlight do/end/class/def etc.
-(defun sanityinc/suppress-ruby-mode-keyword-highlights ()
-  "Suppress highlight-symbol for do/end etc."
-  (set (make-local-variable 'highlight-symbol-ignore-list)
-       (list (concat "\\_<" (regexp-opt '("do" "end")) "\\_>"))))
-(add-hook 'ruby-mode-hook 'sanityinc/suppress-ruby-mode-keyword-highlights)
+(when (maybe-require-package 'robe)
+  (after-load 'ruby-mode
+    (add-hook 'ruby-mode-hook 'robe-mode))
+  (after-load 'company
+    (dolist (hook '(ruby-mode-hook inf-ruby-mode-hook html-erb-mode-hook haml-mode))
+      (add-hook hook
+                (lambda () (sanityinc/local-push-company-backend 'company-robe))))))
 
 
 
@@ -78,13 +69,6 @@
 
 
 (require-package 'bundler)
-
-
-;;; YAML
-
-(when (maybe-require-package 'yaml-mode)
-  (add-auto-mode 'yaml-mode "\\.yml\\.erb\\'"))
-
 
 
 ;;; ERB
