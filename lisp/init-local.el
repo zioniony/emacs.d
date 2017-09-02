@@ -11,10 +11,13 @@
 ;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
+(global-set-key (kbd "C-c b") 'org-iswitchb)
 ;;; click Shift + Mid-Mouse to open url
 (global-set-key [S-mouse-2] 'browse-url-at-mouse)
 (after-load 'python (define-key python-mode-map (kbd "C-c r") 'python-shell-send-region))
+(after-load 'python (define-key python-mode-map (kbd "C-c s") 'python-shell-send-defun))
 ;; (define-key python-mode-map (kbd "C-c f") 'python-shell-send-defun)
+(after-load 'elpy (define-key python-mode-map (kbd "C-c g") 'elpy-goto-definition-other-window))
 ;;(global-set-key "\C-\\" nil)
 
 ;;; load packages
@@ -48,6 +51,10 @@
 (require-package 'showtip)
 (require 'sdcv)
 
+;; python sphinx doc auto generator
+(require-package 'sphinx-doc)
+(require 'sphinx-doc)
+
 (require 'xmsi-math-symbols-input)
 
 
@@ -56,7 +63,10 @@
 ;;       auto-mode-alist (cons '("\\.jl$"         . sawfish-mode) auto-mode-alist)
 ;;       auto-mode-alist (cons '("\\.sawfish/rc$" . sawfish-mode) auto-mode-alist))
 
+(setq w3m-default-display-inline-images t)
 
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "chromium")
 (setq display-time-format "%Y-%m-%d %H:%M")
 
 (setq sdcv-dictionary-simple-list        ;; a simple dictionary list
@@ -115,7 +125,8 @@
 ;; (pyvenv-workon "py3.4")
 (elpy-enable)
 (elpy-use-ipython)
-(pyvenv-workon "currentpy")
+;(pyvenv-workon "currentpy")
+;; (pyvenv-activate (expand-file-name "~/miniconda3/envs/cubesviewer"))
 ;;(setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
 ;;(autoload 'pylint "pylint")
 ;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
@@ -131,10 +142,24 @@
 ;(set (make-local-variable 'company-backends) '(company-go))
 ;(company-mode)))
 (setq company-tooltip-limit 20)                      ; bigger popup window
-(setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
+(setq company-idle-delay 3)                         ; decrease delay before autocompletion popup shows
 (setq company-echo-delay 0)                          ; remove annoying blinking
 (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
 (add-hook 'before-save-hook 'gofmt-before-save)
+
+(defvar py-init-lines
+  '(
+    "#!/usr/bin/env python"
+    "# -*- coding: utf-8 -*-"
+    )
+  "Init lines to add to empty python files."
+  )
+
+(add-hook 'after-change-major-mode-hook
+          '(lambda ()
+             (code-initlines py-init-lines 'python-mode)
+             )
+          )
 
 (require-package 'adoc-mode)
 (require-package 'company)
@@ -496,6 +521,36 @@ Will work on both `org-mode' and any mode that accepts plain html."
                   (list "" "Args:" formatted-args)
                   indent)
        "\n"))))
+
+(defun code-initlines (lines mode)
+  "Add initial LINES to specific MODE."
+  (when (and (equal major-mode mode) (equal 0 (buffer-size)))
+    (loop for line in lines
+          do (progn
+               (insert line)
+               (newline))
+          )
+    ))
+
+;;; https://stackoverflow.com/questions/1731634/dont-show-uninteresting-files-in-emacs-completion-window
+;; (add-to-list 'ido-ignore-files "\.pyc")
+(defadvice completion--file-name-table (after
+                                        ignoring-backups-f-n-completion
+                                        activate)
+  "Filter out results when they match `completion-ignored-extensions'."
+  (let ((res ad-return-value))
+    (if (and (listp res)
+             (stringp (car res))
+             (cdr res))                 ; length > 1, don't ignore sole match
+        (setq ad-return-value
+              (completion-pcm--filename-try-filter res)))))
+
+(eval-after-load "dired"
+  '(require 'dired-x))
+
+(add-hook 'dired-mode-hook
+          (lambda ()
+            (dired-omit-mode 1)))
 
 (provide 'init-local)
 ;;; init-local.el ends here
