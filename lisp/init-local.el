@@ -3,6 +3,9 @@
 ;;; Code:
 ;; set path:
 ;; example of setting env var named “path”, by appending a new path to existing path
+
+(require 'init-optional)
+
 (setenv "PATH" (concat "~/miniconda3/bin" ":" (getenv "PATH")))
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
@@ -36,7 +39,7 @@
 ;;; emacs speaks statistics
 (require-package 'ess)
 (require-package 'ess-R-data-view)
-(require-package 'ess-R-object-popup)
+;;(require-package 'ess-R-object-popup)
 (require-package 'ess-smart-underscore)
 (require 'ess-site)
 
