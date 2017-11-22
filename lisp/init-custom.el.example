@@ -1,0 +1,7 @@
+;;; init-custom.el --- Summary
+;;; Commentary:
+;;; Code:
+;;; add your codes here
+
+(provide 'init-custom)
+;;; init-custom.el ends here

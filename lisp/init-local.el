@@ -201,12 +201,13 @@
  ;; simple-prompt: see https://github.com/jorgenschaefer/elpy/issues/949
  '(python-shell-interpreter-args "-i --simple-prompt --pprint")
  '(python-shell-interpreter-interactive-arg "-i")
-                                        ;'(python-shell-interpreter-args "-i --gui=qt4")
-                                        ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
+ ;; '(python-shell-interpreter-args "-i --gui=qt4")
+ ;; '(python-shell-interpreter-interactive-arg "-i --gui=qt4")
  ;; ess latex
  '(TeX-engine (quote xetex))
  '(ess-swv-pdflatex-commands '("xelatex"))
  '(gud-pdb-command-name "python -m pdb")
+ '(realgud:pdb-command-name "python -m pdb")
  '(ess-keep-dump-files nil)
  '(ess-ask-for-ess-directory nil)
  '(ess-swv-processor (quote knitr))
@@ -558,6 +559,8 @@ Will work on both `org-mode' and any mode that accepts plain html."
 (add-hook 'dired-mode-hook
           (lambda ()
             (dired-omit-mode 1)))
+
+(require 'init-custom nil t)
 
 (provide 'init-local)
 ;;; init-local.el ends here
