@@ -5,9 +5,6 @@
  ;; If there is more than one, they won't work right.
  '(TeX-engine (quote xetex))
  '(custom-enabled-themes (quote (tangotango)))
- '(custom-safe-themes
-   (quote
-    ("5999e12c8070b9090a2a1bbcd02ec28906e150bb2cdce5ace4f965c76cf30476" "49e5a7955b853f70d1fe751b2f896921398b273aa62f47bda961a45f80219581" default)))
  '(desktop-restore-frames nil)
  '(diff-command "diff")
  '(diff-switches "-Nau1")
