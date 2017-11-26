@@ -4,8 +4,6 @@
 ;; set path:
 ;; example of setting env var named “path”, by appending a new path to existing path
 
-(require 'init-optional)
-
 (setenv "PATH" (concat "~/miniconda3/bin" ":" (getenv "PATH")))
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
@@ -19,6 +17,7 @@
 (global-set-key [S-mouse-2] 'browse-url-at-mouse)
 (after-load 'python (define-key python-mode-map (kbd "C-c r") 'python-shell-send-region))
 (after-load 'python (define-key python-mode-map (kbd "C-c s") 'python-shell-send-defun))
+(after-load 'python (define-key python-mode-map (kbd "C-c h") (lambda () (interactive) (message (python-info-current-defun)))))
 ;; (define-key python-mode-map (kbd "C-c f") 'python-shell-send-defun)
 (after-load 'elpy (define-key python-mode-map (kbd "C-c g") 'elpy-goto-definition-other-window))
 ;;(global-set-key "\C-\\" nil)
@@ -102,6 +101,7 @@
 
 ;; Fill Column Indicator (fci-mode)
 ;; (require 'fill-column-indicator)
+(require-package 'fill-column-indicator)
 (setq fci-rule-column 80)
 ;; (setq fci-rule-width 1)
 (setq fci-rule-color "darkblue")
@@ -110,6 +110,7 @@
 ;; (setq fci-dash-pattern .40)
 ;; (add-hook 'after-change-major-mode-hook 'fci-mode)
 (add-hook 'python-mode-hook 'fci-mode)
+(add-hook 'python-mode-hook 'subword-mode)
 (add-hook 'org-mode-hook 'fci-mode)
 (add-hook 'org-mode-hook 'yas-minor-mode)
 
@@ -128,22 +129,22 @@
 ;; (pyvenv-workon "py3.4")
 (elpy-enable)
 (elpy-use-ipython)
-;(pyvenv-workon "currentpy")
+;; (pyvenv-workon "currentpy")
 ;; (pyvenv-activate (expand-file-name "~/miniconda3/envs/cubesviewer"))
-;;(setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
-;;(autoload 'pylint "pylint")
-;;(add-hook 'python-mode-hook 'pylint-add-menu-items)
-;;(add-hook 'python-mode-hook 'pylint-add-key-bindings)
+;; (setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
+;; (autoload 'pylint "pylint")
+;; (add-hook 'python-mode-hook 'pylint-add-menu-items)
+;; (add-hook 'python-mode-hook 'pylint-add-key-bindings)
 
-;(require-package 'go-mode)
-;(require 'go-mode-load)
-;(require-package 'go-eldoc)
-;(require-package 'company-go)
-;(require-package 'go-snippets)
-;(add-hook 'go-mode-hook 'go-eldoc-setup)
-;(add-hook 'go-mode-hook (lambda ()
-;(set (make-local-variable 'company-backends) '(company-go))
-;(company-mode)))
+;; (require-package 'go-mode)
+;; (require 'go-mode-load)
+;; (require-package 'go-eldoc)
+;; (require-package 'company-go)
+;; (require-package 'go-snippets)
+;; (add-hook 'go-mode-hook 'go-eldoc-setup)
+;; (add-hook 'go-mode-hook (lambda ()
+;;                           (set (make-local-variable 'company-backends) '(company-go))
+;;                           (company-mode)))
 (setq company-tooltip-limit 20)                      ; bigger popup window
 (setq company-idle-delay 3)                         ; decrease delay before autocompletion popup shows
 (setq company-echo-delay 0)                          ; remove annoying blinking
@@ -154,6 +155,8 @@
   '(
     "#!/usr/bin/env python"
     "# -*- coding: utf-8 -*-"
+    "from __future__ import division, absolute_import"
+    "from __future__ import print_function, unicode_literals"
     )
   "Init lines to add to empty python files."
   )
@@ -198,18 +201,20 @@
  ;; simple-prompt: see https://github.com/jorgenschaefer/elpy/issues/949
  '(python-shell-interpreter-args "-i --simple-prompt --pprint")
  '(python-shell-interpreter-interactive-arg "-i")
-                                        ;'(python-shell-interpreter-args "-i --gui=qt4")
-                                        ;'(python-shell-interpreter-interactive-arg "-i --gui=qt4")
+ ;; '(python-shell-interpreter-args "-i --gui=qt4")
+ ;; '(python-shell-interpreter-interactive-arg "-i --gui=qt4")
  ;; ess latex
  '(TeX-engine (quote xetex))
  '(ess-swv-pdflatex-commands '("xelatex"))
  '(gud-pdb-command-name "python -m pdb")
+ '(realgud:pdb-command-name "python -m pdb")
  '(ess-keep-dump-files nil)
  '(ess-ask-for-ess-directory nil)
  '(ess-swv-processor (quote knitr))
  ;; sdcv timeout
  '(showtip-timeout 60)
  )
+
 
 ;;; from https://github.com/tmtxt/.emacs.d/blob/master/config/tmtxt-sql.el
 ;;; guide https://truongtx.me/2014/08/23/setup-emacs-as-an-sql-database-client/
@@ -554,6 +559,8 @@ Will work on both `org-mode' and any mode that accepts plain html."
 (add-hook 'dired-mode-hook
           (lambda ()
             (dired-omit-mode 1)))
+
+(require 'init-custom nil t)
 
 (provide 'init-local)
 ;;; init-local.el ends here
