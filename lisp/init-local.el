@@ -11,6 +11,13 @@
 (setenv "PYTHONPATH" "/home/ly/work")
 ;;(setq exec-path (append '("~/.local/bin" "~/bin") exec-path))
 
+;;; 解决表格中英混排不能对齐问题
+(set-face-attribute 'default nil :font
+                    (format   "%s:pixelsize=%d" "DejaVu Sans Mono" 15))
+(dolist (charset '(kana han cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font) charset
+                    (font-spec :family "文泉驿等宽微米黑" :size 18)))
+
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
 (global-set-key (kbd "C-c b") 'org-iswitchb)
 ;;; click Shift + Mid-Mouse to open url
@@ -126,9 +133,10 @@
 ;; (require-package 'pyvenv)
 ;; (add-hook 'python-mode-hook (pyvenv-workon "py3"))
 (require-package 'highlight-indentation)
-;; (pyvenv-workon "py3.4")
 (elpy-enable)
-(elpy-use-ipython)
+;; (elpy-use-ipython)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt --pprint")
 ;; (pyvenv-workon "currentpy")
 ;; (pyvenv-activate (expand-file-name "~/miniconda3/envs/cubesviewer"))
 ;; (setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
