@@ -538,6 +538,30 @@ Will work on both `org-mode' and any mode that accepts plain html."
                   indent)
        "\n"))))
 
+(defun elpy-doctest-def (&optional arg)
+  "Python doc test of current def.
+
+ARG: verbose flag"
+  (interactive "P")
+  (python-shell-send-buffer)
+  (python-shell-send-string "import doctest")
+  (if arg
+      (python-shell-send-string (concatenate 'string "doctest.run_docstring_examples(" (python-info-current-defun) ", globals(), verbose=True)"))
+    (python-shell-send-string (concatenate 'string "doctest.run_docstring_examples(" (python-info-current-defun) ", globals(), verbose=False)"))))
+
+
+(defun elpy-doctest-buffer (&optional arg)
+  "Python doc test of current buffer.
+
+ARG: verbose flag"
+  (interactive "P")
+  (python-shell-send-buffer)
+  (python-shell-send-string "import doctest")
+  (if arg
+      (python-shell-send-string "doctest.testmod(verbose=True)")
+    (python-shell-send-string "doctest.testmod(verbose=False)")))
+
+
 (defun code-initlines (lines mode)
   "Add initial LINES to specific MODE."
   (when (and (equal major-mode mode) (equal 0 (buffer-size)))
