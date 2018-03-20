@@ -26,7 +26,8 @@
 (after-load 'python (define-key python-mode-map (kbd "C-c s") 'python-shell-send-defun))
 (after-load 'python (define-key python-mode-map (kbd "C-c h") (lambda () (interactive) (message (python-info-current-defun)))))
 ;; (define-key python-mode-map (kbd "C-c f") 'python-shell-send-defun)
-(after-load 'elpy (define-key python-mode-map (kbd "C-c g") 'elpy-goto-definition-other-window))
+(after-load 'elpy (define-key python-mode-map (kbd "C-c g") 'elpy-goto-assignment-other-window))
+(after-load 'elpy (define-key python-mode-map (kbd "C-c j") 'elpy-goto-definition-other-window))
 ;;(global-set-key "\C-\\" nil)
 
 ;;; load packages
@@ -584,6 +585,13 @@ ARG: verbose flag"
              (cdr res))                 ; length > 1, don't ignore sole match
         (setq ad-return-value
               (completion-pcm--filename-try-filter res)))))
+
+(defun hide-ctrl-M ()
+  "Hides the disturbing '^M' showing up in files containing mixed UNIX and DOS line endings."
+  (interactive)
+  (setq buffer-display-table (make-display-table))
+  (aset buffer-display-table ?\^M []))
+
 
 (eval-after-load "dired"
   '(require 'dired-x))
