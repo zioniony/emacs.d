@@ -110,7 +110,7 @@
 ;; Fill Column Indicator (fci-mode)
 ;; (require 'fill-column-indicator)
 (require-package 'fill-column-indicator)
-(setq fci-rule-column 80)
+(setq fci-rule-column 100)
 ;; (setq fci-rule-width 1)
 (setq fci-rule-color "darkblue")
 ;; (setq fci-rule-use-dashes t)
