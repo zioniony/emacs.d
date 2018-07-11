@@ -179,13 +179,11 @@
 (require-package 'adoc-mode)
 (require-package 'company)
 (require-package 'tangotango-theme)
+(load-theme 'tangotango t)
 
 ;;; custom-set-variables
 (custom-set-variables
  '(custom-enabled-themes (quote (tangotango)))
- '(custom-safe-themes
-   (quote
-    ("49e5a7955b853f70d1fe751b2f896921398b273aa62f47bda961a45f80219581" default)))
  '(desktop-restore-frames nil)
  '(session-use-package t nil (session))
  ;; set time interval of echo area
