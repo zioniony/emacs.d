@@ -108,18 +108,17 @@
 (setq yas/triggers-in-field t);
 
 ;; Fill Column Indicator (fci-mode)
-;; (require 'fill-column-indicator)
-(require-package 'fill-column-indicator)
-(setq fci-rule-column 100)
-;; (setq fci-rule-width 1)
-(setq fci-rule-color "darkblue")
-;; (setq fci-rule-use-dashes t)
-;; fci-dash-pattern: 0 ~ 1
-;; (setq fci-dash-pattern .40)
-;; (add-hook 'after-change-major-mode-hook 'fci-mode)
-(add-hook 'python-mode-hook 'fci-mode)
+;;; (require-package 'fill-column-indicator)
+;;; (setq fci-rule-column 100)
+;;; ;; (setq fci-rule-width 1)
+;;; (setq fci-rule-color "darkblue")
+;;; ;; (setq fci-rule-use-dashes t)
+;;; ;; fci-dash-pattern: 0 ~ 1
+;;; ;; (setq fci-dash-pattern .40)
+;;; ;; (add-hook 'after-change-major-mode-hook 'fci-mode)
+;;; (add-hook 'python-mode-hook 'fci-mode)
+;;; (add-hook 'org-mode-hook 'fci-mode)
 (add-hook 'python-mode-hook 'subword-mode)
-(add-hook 'org-mode-hook 'fci-mode)
 (add-hook 'org-mode-hook 'yas-minor-mode)
 
 ;; Dired reuse directory buffer
