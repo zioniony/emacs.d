@@ -4,7 +4,7 @@
 ;; set path:
 ;; example of setting env var named “path”, by appending a new path to existing path
 
-(setenv "PATH" (concat "~/miniconda3/bin" ":" (getenv "PATH")))
+;;(setenv "PATH" (concat "~/miniconda3/bin" ":" (getenv "PATH")))
 ;; `pip install --user <pkg>` install programs into '~/.local/bin',
 ;; which is not perceived by emacs.
 ;;(setenv "PATH" (concat "~/.local/bin:~/bin:" (getenv "PATH")))
@@ -19,7 +19,7 @@
                     (font-spec :family "文泉驿等宽微米黑" :size 18)))
 
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
-(global-set-key (kbd "C-c b") 'org-iswitchb)
+;;(global-set-key (kbd "C-c b") 'org-iswitchb)
 ;;; click Shift + Mid-Mouse to open url
 (global-set-key [S-mouse-2] 'browse-url-at-mouse)
 (after-load 'python (define-key python-mode-map (kbd "C-c r") 'python-shell-send-region))
